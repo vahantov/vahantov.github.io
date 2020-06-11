@@ -1,0 +1,88 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: $color-blue-primary;
+  font-size: 1.4rem;
+
+  &_content {
+    width: max-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-blue-lighter;
+    padding: 1.6rem 0;
+
+   &-menu {
+     margin: 0 4rem 0 6rem;
+
+     ul {
+       list-style: none;
+       display: flex;
+
+       li {
+         margin: 0 1rem;
+         text-transform: uppercase;
+         font-weight: 600;
+         border-bottom: 2px dotted transparent;
+         position: relative;
+
+         a {
+           font-size: inherit;
+         }
+
+         &:after {
+           content: "";
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           width: 0;
+           border-bottom: 2px dotted $color-white;
+           transition: all .7s ease;
+         }
+
+         &.marked:after {
+           border-bottom: 2px dotted $color-yellow-primary;
+         }
+
+         &.marked a {
+           color: $color-yellow-primary;
+         }
+
+         &:hover:after {
+           width: 100%;
+         }
+       }
+     }
+   }
+
+    &-phone {
+      display: flex;
+      align-items: center;
+
+      &-icon {
+        margin: 0 1rem;
+
+        img {
+          width: 3rem;
+        }
+      }
+
+      a {
+        font-size: inherit;
+        font-weight: 600;
+        color: $color-blue-primary-hover;
+        border-bottom: 2px dotted $color-blue-primary-hover;
+        transition: all .3s;
+
+        &:hover {
+          color: $color-yellow-primary;
+          border-bottom: 2px dotted transparent;
+        }
+      }
+    }
+
+  }
+}
