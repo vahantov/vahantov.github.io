@@ -32,11 +32,17 @@ body {
 *:not(nav) {
   z-index: 1; }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 .nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   background-color: #253D93;
   font-size: 1.4rem;
   z-index: 10; }
@@ -95,7 +101,7 @@ body {
           border-bottom: 2px dotted transparent; }
 
 .header {
-  width: 100vw;
+  width: 100%;
   height: 95vh;
   background-color: #253D93;
   position: relative; }
@@ -162,7 +168,8 @@ body {
             .header_content .right-item .content .more .hidden {
               max-width: 0;
               overflow: hidden;
-              transition: max-width .7s ease; }
+              transition: max-width .7s ease;
+              color: #FFB240; }
             .header_content .right-item .content .more i {
               margin-left: 1rem;
               font-weight: lighter;
@@ -175,8 +182,10 @@ body {
             max-width: 50%; }
 
 .section-services {
-  width: 100vw;
+  width: 100%;
   background-color: #F4F4F4; }
+  .section-services .call_to_action {
+    margin-top: -4rem; }
 
 .call_to_action {
   width: 65%;
@@ -185,7 +194,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative; }
+  position: relative;
+  margin: auto; }
   .call_to_action .image {
     height: 100%;
     background-color: #FFB240; }
@@ -203,16 +213,19 @@ body {
       width: 65%;
       color: #323A56;
       line-height: 120%; }
-    .call_to_action .content .button {
-      width: 100%;
-      position: relative; }
-      .call_to_action .content .button .btn {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-      .call_to_action .content .button img {
-        position: absolute; }
+  .call_to_action .button {
+    position: relative;
+    width: 30%; }
+    .call_to_action .button .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: max-content; }
+    .call_to_action .button .btn:hover ~ img {
+      animation: spin 5s infinite; }
+    .call_to_action .button img {
+      margin: auto; }
 
 .btn-primary {
   padding: 1.5rem 2.2rem;
@@ -220,4 +233,8 @@ body {
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  transition: color 1s, background-color 2s; }
+  .btn-primary:hover {
+    background-color: #FFB240;
+    color: #323A56; }

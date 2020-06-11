@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin: auto;
 
   .image {
     height: 100%;
@@ -30,18 +31,25 @@
       line-height: 120%
     }
 
-    .button {
-      width: 100%;
-      position: relative;
 
-      .btn {
-        @include centering;
-      }
 
-      img {
-        position: absolute;
-      }
+  }
+  .button {
+    position: relative;
+    width: 30%;
+
+    .btn {
+      @include centering;
+      width: max-content;
+
+
     }
+    .btn:hover ~ img{
+      animation: spin 5s infinite;
+    }
+    img {
+      margin: auto;
 
+    }
   }
 }

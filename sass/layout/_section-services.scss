@@ -1,7 +1,7 @@
-.section-services{
-  width: 100vw;
+.section-services {
+  width: 100%;
   background-color: $color-gray-primary;
-  &__content{
-
+  .call_to_action {
+    margin-top: -4rem;
   }
 }

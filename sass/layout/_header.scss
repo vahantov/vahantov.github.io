@@ -1,5 +1,5 @@
 .header {
-  width: 100vw;
+  width: 100%;
   height: 95vh;
   background-color: $color-blue-primary;
   position: relative;
@@ -85,6 +85,7 @@
               max-width: 0;
               overflow: hidden;
               transition: max-width .7s ease;
+              color: $color-yellow-primary;
             }
 
             i {
