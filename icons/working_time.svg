@@ -1,0 +1,15 @@
+<svg width="76" height="73" viewBox="0 0 76 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 66V66C11 69.3137 13.6863 72 17 72H65C70.5228 72 75 67.5228 75 62V18C75 14.134 71.866 11 68 11V11" stroke="#E43232" stroke-width="2"/>
+<rect x="1" y="1" width="67" height="65" rx="7" stroke="#FFB240" stroke-width="2"/>
+<rect x="38" y="15" width="6" height="10" rx="3" stroke="#FFB240" stroke-width="2"/>
+<rect x="24" y="15" width="6" height="10" rx="3" stroke="#FFB240" stroke-width="2"/>
+<path d="M20 25V15L17 18" stroke="#FFB240" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35 18C35 17.4477 34.5523 17 34 17C33.4477 17 33 17.4477 33 18H35ZM33 19C33 19.5523 33.4477 20 34 20C34.5523 20 35 19.5523 35 19H33ZM35 22C35 21.4477 34.5523 21 34 21C33.4477 21 33 21.4477 33 22H35ZM33 23C33 23.5523 33.4477 24 34 24C34.5523 24 35 23.5523 35 23H33ZM35 19V18H33V19H35ZM35 23V22H33V23H35Z" fill="#FFB240"/>
+<rect x="48" y="15" width="6" height="10" rx="3" stroke="#FFB240" stroke-width="2"/>
+<rect x="38" y="43" width="6" height="10" rx="3" stroke="#FFB240" stroke-width="2"/>
+<rect x="24" y="43" width="6" height="10" rx="3" stroke="#FFB240" stroke-width="2"/>
+<path d="M16 46V45.5C16 44.1193 17.1193 43 18.5 43V43C19.8807 43 21 44.1193 21 45.5V45.8491C21 47.1835 20.2999 48.4201 19.1556 49.1066L17.715 49.971C16.651 50.6094 16 51.7592 16 53V53H21" stroke="#FFB240" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35 46C35 45.4477 34.5523 45 34 45C33.4477 45 33 45.4477 33 46H35ZM33 47C33 47.5523 33.4477 48 34 48C34.5523 48 35 47.5523 35 47H33ZM35 50C35 49.4477 34.5523 49 34 49C33.4477 49 33 49.4477 33 50H35ZM33 51C33 51.5523 33.4477 52 34 52C34.5523 52 35 51.5523 35 51H33ZM35 47V46H33V47H35ZM35 51V50H33V51H35Z" fill="#FFB240"/>
+<rect x="48" y="43" width="6" height="10" rx="3" stroke="#FFB240" stroke-width="2"/>
+<path d="M30 33C29.4477 33 29 33.4477 29 34C29 34.5523 29.4477 35 30 35V33ZM40 35C40.5523 35 41 34.5523 41 34C41 33.4477 40.5523 33 40 33V35ZM40 33H30V35H40V33Z" fill="#E43232"/>
+</svg>
