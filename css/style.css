@@ -33,9 +33,7 @@ body {
   z-index: 1; }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
+  to {
     transform: rotate(360deg); } }
 
 .nav {
@@ -47,15 +45,15 @@ body {
   font-size: 1.4rem;
   z-index: 10; }
   .nav_content {
-    width: max-content;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #2F48A5;
-    padding: 1.6rem 0; }
+    padding: 1.6rem 0;
+    width: 65%; }
     .nav_content-menu {
-      margin: 0 10rem 0 12rem; }
+      margin-right: -3rem; }
       .nav_content-menu ul {
         list-style: none;
         display: flex; }
@@ -87,9 +85,12 @@ body {
       display: flex;
       align-items: center; }
       .nav_content-phone-icon {
-        margin: 0 1rem; }
+        margin-right: 1rem;
+        height: 3rem;
+        width: 3rem; }
         .nav_content-phone-icon img {
-          width: 3rem; }
+          height: 100%;
+          width: 100%; }
       .nav_content-phone a {
         font-size: inherit;
         font-weight: 600;
@@ -102,7 +103,7 @@ body {
 
 .header {
   width: 100%;
-  height: 95vh;
+  min-height: 95vh;
   background-color: #253D93;
   position: relative; }
   .header_content {
@@ -147,6 +148,9 @@ body {
           font-size: 1.6rem; }
         .header_content .right-item .icon.no-padding {
           margin-right: -3rem; }
+        .header_content .right-item .icon {
+          display: flex;
+          align-items: center; }
         .header_content .right-item .content {
           font-size: 2.8rem;
           font-weight: 500;
@@ -168,8 +172,9 @@ body {
             .header_content .right-item .content .more .hidden {
               max-width: 0;
               overflow: hidden;
-              transition: max-width .7s ease;
-              color: #FFB240; }
+              opacity: 0;
+              transition: all .7s ease;
+              color: #fff; }
             .header_content .right-item .content .more i {
               margin-left: 1rem;
               font-weight: lighter;
@@ -179,6 +184,8 @@ body {
           .header_content .right-item:hover .content span {
             color: #FFB240; }
           .header_content .right-item:hover .content .more .hidden {
+            opacity: 1;
+            color: #FFB240;
             max-width: 50%; }
 
 .section-services {
@@ -223,10 +230,11 @@ body {
       transform: translate(-50%, -50%);
       width: max-content;
       z-index: 2; }
-    .call_to_action .button .btn:hover ~ img {
+    .call_to_action .button .active {
       animation: spin 5s infinite; }
     .call_to_action .button img {
       margin: auto;
+      margin-left: -4rem;
       z-index: 1; }
 
 .btn-primary {
