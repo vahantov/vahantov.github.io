@@ -1,0 +1,47 @@
+.call_to_action {
+  width: $content-width;
+  height: 22rem;
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .image {
+    height: 100%;
+    background-color: $color-yellow-primary;
+    img{
+      height: 100%;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding:0 6.6rem;
+    width: 60%;
+
+    h2 {
+      font-size: 2.4rem;
+      width: 65%;
+      color: $color-text-primary;
+      line-height: 120%
+    }
+
+    .button {
+      width: 100%;
+      position: relative;
+
+      .btn {
+        @include centering;
+      }
+
+      img {
+        position: absolute;
+      }
+    }
+
+  }
+}
