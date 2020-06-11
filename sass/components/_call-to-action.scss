@@ -41,7 +41,7 @@
     .btn {
       @include centering;
       width: max-content;
-
+      z-index: 2;
 
     }
     .btn:hover ~ img{
@@ -49,7 +49,7 @@
     }
     img {
       margin: auto;
-
+      z-index: 1;
     }
   }
 }

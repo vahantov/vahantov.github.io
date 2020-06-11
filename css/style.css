@@ -221,11 +221,13 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: max-content; }
+      width: max-content;
+      z-index: 2; }
     .call_to_action .button .btn:hover ~ img {
       animation: spin 5s infinite; }
     .call_to_action .button img {
-      margin: auto; }
+      margin: auto;
+      z-index: 1; }
 
 .btn-primary {
   padding: 1.5rem 2.2rem;
