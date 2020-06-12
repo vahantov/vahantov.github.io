@@ -44,11 +44,14 @@
       z-index: 2;
 
     }
-    .btn:hover ~ img{
+
+    .active {
       animation: spin 5s infinite;
     }
+
     img {
       margin: auto;
+      margin-left: -4rem;
       z-index: 1;
     }
   }
