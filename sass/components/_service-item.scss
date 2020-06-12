@@ -1,0 +1,101 @@
+.services {
+  &.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+
+    .icon {
+      align-items: flex-start !important;
+    }
+
+    .services-item {
+      background-color: $color-blue-primary !important;
+      min-height: 24rem;
+    }
+  }
+
+  &-item {
+    position: relative;
+    width: 41rem;
+    background-color: $color-blue-primary-dark;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    min-height: 18rem;
+
+    .title.title-small {
+      font-size: 1.6rem;
+    }
+
+    .title.title-medium {
+      font-size: 2.2rem;
+      font-weight: 500;
+    }
+
+    .icon.no-padding {
+      margin-right: -3rem;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .content {
+      font-size: 2.8rem;
+      font-weight: 500;
+      color: $color-white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: color .7s;
+      width: 65%;
+
+      span {
+        color: $color-blue-primary-hover;
+        transition: color .7s;
+      }
+
+      .more {
+        text-transform: uppercase;
+        display: flex;
+        transition: color .7s;
+
+        .hidden {
+          font-weight: bold;
+          font-size: 1.5rem;
+          max-width: 0;
+          overflow: hidden;
+          opacity: 0;
+          transition: all .7s ease;
+          color: $color-white;
+        }
+
+        i {
+          margin-left: 1rem;
+          font-weight: lighter;
+          font-size: 2.4rem;
+        }
+      }
+    }
+
+    &:hover {
+      .content {
+        color: $color-yellow-primary;
+
+        span {
+          color: $color-yellow-primary;
+        }
+
+        .more {
+          .hidden {
+            opacity: 1;
+            color: $color-yellow-primary;
+            max-width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

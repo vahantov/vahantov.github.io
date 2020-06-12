@@ -14,7 +14,8 @@
     justify-content: space-between;
     border-bottom: 1px solid $color-blue-lighter;
     padding: 1.6rem 0;
-    width: $content-width;
+    max-width: $content-width;
+    width: 100%;
 
    &-menu {
        margin-right: -3rem;
@@ -64,6 +65,7 @@
     &-phone {
       display: flex;
       align-items: center;
+      position: relative;
 
       &-icon {
           margin-right: 1rem;
@@ -76,7 +78,7 @@
         }
       }
 
-      a {
+      .number {
         font-size: inherit;
         font-weight: 600;
         color: $color-blue-primary-hover;
@@ -88,7 +90,38 @@
           border-bottom: 2px dotted transparent;
         }
       }
-    }
 
+      .popup {
+        position: absolute;
+        top: 180%;
+        background-color: $color-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 6px 12px rgba(#000, .5);
+        overflow: hidden;
+        width: 22rem;
+        height: 0;
+        transition: all .7s ease;
+
+        &.active {
+          height: 15rem;
+          padding: 2rem 0;
+        }
+
+        .title {
+          font-size: 1.6rem;
+          font-weight: normal;
+        }
+
+        .time {
+          font-size: 1.6rem;
+          font-weight: bold;
+          margin-top: .5rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
   }
 }

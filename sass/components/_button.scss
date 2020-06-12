@@ -1,15 +1,39 @@
 .btn-primary {
   padding: 1.5rem 2.2rem;
   background-color: $color-orange-primary;
-  border-radius: 4px;
+  border-radius: $default-border-radius;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.3rem;
-  transition: color 1s, background-color 2s;
+  color: $color-white;
+  transition: all .7s;
+  display: block;
 
 
   &:hover {
     background-color: $color-yellow-primary;
     color: $color-text-primary;
+  }
+}
+
+.btn-small {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+}
+
+.btn-alt {
+  background-color: $color-white;
+  border-radius: $default-border-radius;
+  padding: 1.5rem 2.2rem;
+  color: $color-blue-primary;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all .7s;
+
+  &:hover {
+    background-color: $color-yellow-primary;
   }
 }

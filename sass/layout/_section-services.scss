@@ -1,7 +1,27 @@
 .section-services {
   width: 100%;
   background-color: $color-gray-primary;
+  padding-bottom: 3rem;
+
   .call_to_action {
     margin-top: -4rem;
+  }
+
+  .section-title {
+    margin: 4rem auto;
+  }
+
+  &__content {
+    max-width: $content-width;
+    width: 100%;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .button {
+      text-align: center;
+      margin: 5rem 0;
+    }
   }
 }

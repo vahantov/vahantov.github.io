@@ -15,3 +15,7 @@ body {
 *:not(nav) {
   z-index: 1;
 }
+
+popup-toggle {
+  cursor: pointer;
+}

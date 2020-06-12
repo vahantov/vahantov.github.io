@@ -1,5 +1,15 @@
 'use strict'
 
+document.createElement('popup-toggle')
+
+function $(item, count) {
+    if ( !count ) {
+        return document.querySelector(item)
+    } else {
+        return document.querySelectorAll(item)
+    }
+}
+
 function spinningButton () {
     const boxes = document.querySelectorAll('.call_to_action')
 
@@ -25,10 +35,28 @@ function spinningButton () {
     });
 }
 
+function callPopup() {
+
+    const btn = $('.nav .number'),
+        popup = $('.nav .popup')
+
+    btn.addEventListener('click', () => {
+        if ( popup.classList.contains('active') ) {
+            popup.classList.remove('active')
+        } else {
+            popup.classList.add('active')
+        }
+    })
+}
+
 window.addEventListener('DOMContentLoaded', function () {
 
-    if ( document.getElementsByClassName('call_to_action') ) {
+    if ( $('.call_to_action')) {
         spinningButton()
+    }
+
+    if ( $('.nav .popup')) {
+        callPopup()
     }
 
 })
