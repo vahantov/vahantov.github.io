@@ -2,7 +2,7 @@
   font-size: 2.4rem;
   font-weight: 500;
   color: $color-yellow-primary;
-  transition: all .7s;
+  transition: all $default-transition-duration;
 
   &:hover {
     color: $color-orange-primary;
@@ -17,7 +17,7 @@
   font-weight: bold;
   font-size: 1.3rem;
   color: $color-white;
-  transition: all .7s;
+  transition: all $default-transition-duration;
   display: block;
 
 
@@ -36,7 +36,7 @@
   font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
-  transition: all .7s;
+  transition: all $default-transition-duration;
 
   &:hover {
     background-color: $color-yellow-primary;
@@ -53,7 +53,7 @@
   font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
-  transition: all .7s;
+  transition: all $default-transition-duration;
 
   &:hover {
     background-color: $color-yellow-primary;
@@ -65,4 +65,38 @@
   font-size: 1.2rem;
   font-weight: bold;
   padding: 1rem 1.5rem;
+}
+
+.more {
+
+  // Hover state will be written separetely
+  /*opacity: 1;
+    color: $color-yellow-primary;
+    max-width: 50%;*/
+
+  text-transform: uppercase;
+  display: flex;
+  transition: color $default-transition-duration;
+
+  .hidden {
+    font-weight: bold;
+    font-size: 1.5rem;
+    max-width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all $default-transition-duration ease;
+    color: $color-white;
+  }
+
+  i {
+    margin-left: 1rem;
+    font-weight: lighter;
+    font-size: 2.4rem;
+  }
+
+  &.more-gray {
+    .hidden, i {
+      color: $color-gray;
+    }
+  }
 }

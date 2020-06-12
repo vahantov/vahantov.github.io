@@ -103,7 +103,7 @@
         overflow: hidden;
         width: 22rem;
         height: 0;
-        transition: all .7s ease;
+        transition: all $default-transition-duration ease;
 
         &.active {
           height: 15rem;

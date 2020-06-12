@@ -8,7 +8,7 @@ a {
   color: #fff;
   text-decoration: none; }
 
-h1, h2, h4, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #323A56;
   line-height: 120%; }
 
@@ -41,6 +41,10 @@ popup-toggle {
 
 a {
   display: inline-block; }
+
+.section-button {
+  text-align: center;
+  margin: 5rem 0; }
 
 @keyframes spin {
   to {
@@ -124,7 +128,7 @@ a {
         overflow: hidden;
         width: 22rem;
         height: 0;
-        transition: all .7s ease; }
+        transition: all 0.7s ease; }
         .nav_content-phone .popup.active {
           height: 15rem;
           padding: 2rem 0; }
@@ -187,9 +191,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
-    .section-services__content .button {
-      text-align: center;
-      margin: 5rem 0; }
 
 .section-map {
   width: 100%;
@@ -252,7 +253,8 @@ a {
         width: 50%; }
 
 .section-part {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 7rem; }
   .section-part .call_to_action {
     margin-top: -11rem; }
   .section-part__content {
@@ -324,6 +326,72 @@ a {
             font-weight: 500;
             color: #323A56; }
 
+.section-blog {
+  width: 100%; }
+  .section-blog__content {
+    width: 100%;
+    max-width: 125rem;
+    margin: auto; }
+    .section-blog__content .grid {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
+      .section-blog__content .grid .item {
+        min-height: 48rem;
+        width: 38rem;
+        position: relative;
+        transition: all .3s;
+        background-color: #fff; }
+        .section-blog__content .grid .item:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
+          .section-blog__content .grid .item:hover .title h2 {
+            color: #E43232; }
+          .section-blog__content .grid .item:hover .more .hidden {
+            opacity: 1;
+            max-width: 80%; }
+        .section-blog__content .grid .item .intro {
+          position: relative;
+          width: 100%;
+          height: 28rem;
+          overflow: hidden; }
+          .section-blog__content .grid .item .intro .new {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            padding: 1rem 1.4rem;
+            position: absolute;
+            top: 2.5rem;
+            left: 0;
+            background-color: #E43232;
+            z-index: 2;
+            font-weight: bold;
+            color: #fff; }
+          .section-blog__content .grid .item .intro img {
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto; }
+        .section-blog__content .grid .item .content {
+          padding: 3rem 3.5rem;
+          min-height: 18.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          .section-blog__content .grid .item .content .item-more {
+            display: flex;
+            justify-content: space-between; }
+            .section-blog__content .grid .item .content .item-more .date {
+              font-size: 1.3rem;
+              font-weight: 400;
+              color: #ACAFB9; }
+          .section-blog__content .grid .item .content .title h2 {
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 140%;
+            transition: all 0.7s; }
+
 body {
   background-color: #F4F4F4; }
 
@@ -375,7 +443,7 @@ body {
   font-size: 2.4rem;
   font-weight: 500;
   color: #FFB240;
-  transition: all .7s; }
+  transition: all 0.7s; }
   .btn:hover {
     color: #E43232; }
 
@@ -387,7 +455,7 @@ body {
   font-weight: bold;
   font-size: 1.3rem;
   color: #fff;
-  transition: all .7s;
+  transition: all 0.7s;
   display: block; }
   .btn-primary:hover {
     background-color: #FFB240;
@@ -402,7 +470,7 @@ body {
   font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
-  transition: all .7s; }
+  transition: all 0.7s; }
   .btn-alt:hover {
     background-color: #FFB240; }
 
@@ -416,7 +484,7 @@ body {
   font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
-  transition: all .7s; }
+  transition: all 0.7s; }
   .btn-outline:hover {
     background-color: #FFB240;
     color: #595F74; }
@@ -425,6 +493,28 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 1rem 1.5rem; }
+
+.more {
+  /*opacity: 1;
+    color: $color-yellow-primary;
+    max-width: 50%;*/
+  text-transform: uppercase;
+  display: flex;
+  transition: color 0.7s; }
+  .more .hidden {
+    font-weight: bold;
+    font-size: 1.5rem;
+    max-width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.7s ease;
+    color: #fff; }
+  .more i {
+    margin-left: 1rem;
+    font-weight: lighter;
+    font-size: 2.4rem; }
+  .more.more-gray .hidden, .more.more-gray i {
+    color: #ACAFB9; }
 
 .services.grid {
   display: flex;
@@ -436,7 +526,7 @@ body {
   .services.grid .services-item {
     background-color: #253D93 !important;
     min-height: 24rem;
-    transition: all .7s; }
+    transition: all 0.7s; }
     .services.grid .services-item:hover {
       background-color: #1E3176 !important; }
 
@@ -465,27 +555,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: color .7s;
+    transition: color 0.7s;
     width: 65%; }
     .services-item .content span {
       color: #75BDFF;
-      transition: color .7s; }
-    .services-item .content .more {
-      text-transform: uppercase;
-      display: flex;
-      transition: color .7s; }
-      .services-item .content .more .hidden {
-        font-weight: bold;
-        font-size: 1.5rem;
-        max-width: 0;
-        overflow: hidden;
-        opacity: 0;
-        transition: all .7s ease;
-        color: #fff; }
-      .services-item .content .more i {
-        margin-left: 1rem;
-        font-weight: lighter;
-        font-size: 2.4rem; }
+      transition: color 0.7s; }
   .services-item:hover .content {
     color: #FFB240; }
     .services-item:hover .content span {
@@ -498,7 +572,7 @@ body {
 .section-title {
   width: 50%;
   text-align: center;
-  margin: auto; }
+  margin: 4rem auto; }
   .section-title h3 {
     font-size: 3.2rem;
     font-weight: 500; }
