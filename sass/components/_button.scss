@@ -1,3 +1,14 @@
+.btn {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: $color-yellow-primary;
+  transition: all .7s;
+
+  &:hover {
+    color: $color-orange-primary;
+  }
+}
+
 .btn-primary {
   padding: 1.5rem 2.2rem;
   background-color: $color-orange-primary;
@@ -35,5 +46,23 @@
 
   &:hover {
     background-color: $color-yellow-primary;
+  }
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid $color-yellow-primary;
+  border-radius: $default-border-radius;
+  padding: 1.5rem 2.2rem;
+  color: $color-yellow-primary;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all .7s;
+
+  &:hover {
+    background-color: $color-yellow-primary;
+    color: $color-text-gray;
   }
 }

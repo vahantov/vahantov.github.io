@@ -1,0 +1,83 @@
+.section-map {
+  width: 100%;
+  padding-bottom: 15rem;
+  background: linear-gradient(0deg, $color-blue-primary 0%, $color-blue-primary 40%, transparent 40%, transparent 100%);
+  &__content{
+    width: 100%;
+    background-color: $color-white;
+    max-width: $content-width;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 6.5rem;
+        margin-bottom: 4rem;
+
+        h2 {
+          font-size: 3.4rem;
+          font-weight: 500;
+          color: $color-text-primary;
+          line-height: 120%;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          line-height: 140%;
+          color: $color-text-gray;
+        }
+      }
+
+      .right {
+        display: flex;
+        justify-content: space-between;
+        .item {
+          width: 28%;
+          height: 85%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          &:after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 6.4rem;
+            background-color: $color-yellow-primary;
+          }
+
+          h1 {
+            font-size: 4.8rem;
+            font-weight: bold;
+            color: $color-text-primary;
+          }
+          p {
+            font-size: 1.6rem;
+            line-height: 140%;
+            color: $color-text-gray;
+          }
+        }
+
+
+
+      }
+
+      & > * {
+        width: 50%;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,45 @@
+.section-part {
+  width: 100%;
+  .call_to_action {
+    margin-top: -11rem;
+  }
+
+  &__content {
+    width: 100%;
+    margin: auto;
+    margin-top: 10rem;
+    min-height: 49rem;
+    max-width: $content-width;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5rem 5rem 5rem;
+
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 40%;
+
+      & > * {
+
+        a {
+          width: max-content;
+        }
+
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+    }
+
+    &-right {
+      width: 60%;
+      height: 100%;
+      background-color: $color-white;
+      
+
+    }
+  }
+}
