@@ -11,18 +11,34 @@
     min-height: 49rem;
     max-width: $content-width;
     display: flex;
-    justify-content: space-around;
-    padding: 0 5rem 5rem 5rem;
+    justify-content: space-between;
+    padding: 0 5rem 4rem 5rem;
+    position: relative;
+    background: linear-gradient(0deg, $color-blue-primary-dark 0%, $color-blue-primary-dark 50%, transparent 50%, transparent 100%);
 
+    .background-image {
+      position: absolute;
+      bottom: 0;
+      left: 22%;
+    }
 
     &-left {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      width: 40%;
+      width: 35%;
+
+      .top {
+        display: block;
+
+        h2 {
+          font-weight: 500;
+          font-size: 2.4rem;
+          margin-bottom: 2rem;
+        }
+      }
 
       & > * {
-
         a {
           width: max-content;
         }
@@ -32,14 +48,61 @@
         flex-direction: column;
         justify-content: space-evenly;
       }
+
+      .bottom {
+        height: 40%;
+        justify-content: space-between;
+
+        p {
+          color: $color-white;
+        }
+      }
     }
 
     &-right {
       width: 60%;
-      height: 100%;
       background-color: $color-white;
-      
+      padding: 4.5rem 3rem;
 
+      ul.grid {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        flex-wrap: wrap;
+
+        .item {
+          width: 50%;
+          padding-right: 4rem;
+          display: flex;
+          align-items: center;
+
+          &:nth-child(odd) {
+            border-right: 1px solid $color-gray-primary;
+          }
+
+          &:nth-child(even) {
+            width: 45%;
+          }
+
+          .icon {
+            width: 5rem;
+            height: 5rem;
+            margin-right: 2rem;
+
+            img {
+              height: 100%;
+              width: auto;
+            }
+          }
+
+          p {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $color-text-primary;
+          }
+        }
+      }
     }
   }
 }

@@ -27,12 +27,6 @@
   }
 }
 
-.btn-small {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 1rem 1.5rem;
-}
-
 .btn-alt {
   background-color: $color-white;
   border-radius: $default-border-radius;
@@ -65,4 +59,10 @@
     background-color: $color-yellow-primary;
     color: $color-text-gray;
   }
+}
+
+.btn-small {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
 }

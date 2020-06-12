@@ -10,6 +10,11 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h4, h4, h5, h6 {
+  color: $color-text-primary;
+  line-height: 120%;
+}
+
 h1 {
   font-weight: 600;
 }

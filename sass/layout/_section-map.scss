@@ -39,6 +39,7 @@
       .right {
         display: flex;
         justify-content: space-between;
+
         .item {
           width: 28%;
           height: 85%;
@@ -69,9 +70,6 @@
             color: $color-text-gray;
           }
         }
-
-
-
       }
 
       & > * {
