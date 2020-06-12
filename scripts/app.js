@@ -44,7 +44,19 @@ function callPopup() {
         if ( popup.classList.contains('active') ) {
             popup.classList.remove('active')
         } else {
-            popup.classList.add('active')
+            (async function() {
+                await popup.classList.add('active')
+
+                window.addEventListener('click', (event) => {
+                    if ( event.target !== btn && event.target !== popup && event.target.parentNode !== popup ) {
+                        popup.classList.remove('active')
+                    }
+                })
+
+                window.addEventListener('scroll', () => {
+                    popup.classList.remove('active')
+                })
+            })()
         }
     })
 }
