@@ -40,24 +40,27 @@ function callPopup() {
     const btn = $('.nav .number'),
         popup = $('.nav .popup')
 
-    btn.addEventListener('click', () => {
+    btn.addEventListener('mouseover', () => {
         if ( popup.classList.contains('active') ) {
             popup.classList.remove('active')
         } else {
             (async function() {
                 await popup.classList.add('active')
 
-                window.addEventListener('click', (event) => {
+                /*window.addEventListener('click', (event) => {  // убираем попап при уходе мышки
                     if ( event.target !== btn && event.target !== popup && event.target.parentNode !== popup ) {
                         popup.classList.remove('active')
                     }
-                })
-
-                window.addEventListener('scroll', () => {
+                })*/
+                popup.addEventListener("mouseleave", () => {
                     popup.classList.remove('active')
                 })
+               /* window.addEventListener('scroll', () => { // Убираем попал при скроле
+                    popup.classList.remove('active')
+                })*/
             })()
         }
+
     })
 }
 

@@ -12,6 +12,11 @@
     .services-item {
       background-color: $color-blue-primary !important;
       min-height: 24rem;
+      transition: all .7s;
+      &:hover{
+        background-color: $color-blue-primary-dark !important;
+
+      }
     }
   }
 
