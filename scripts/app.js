@@ -2,8 +2,8 @@
 
 document.createElement('popup-toggle')
 
-function $(item, count) {
-    if ( !count ) {
+function $(item, arr) {
+    if ( !arr ) {
         return document.querySelector(item)
     } else {
         return document.querySelectorAll(item)
@@ -11,7 +11,7 @@ function $(item, count) {
 }
 
 function spinningButton () {
-    const boxes = document.querySelectorAll('.call_to_action')
+    const boxes = $('.call_to_action', true)
 
     boxes.forEach(elem => {
         const btn = elem.querySelector('.btn'),
