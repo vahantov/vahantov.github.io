@@ -1,7 +1,5 @@
 'use strict'
 
-document.createElement('popup-toggle')
-
 function $(item, arr) {
     if ( !arr ) {
         return document.querySelector(item)
@@ -64,14 +62,31 @@ function callPopup() {
     })
 }
 
+function callToAction() {
+    let box = $('call-to-action', true)
+
+        box.forEach(item => {
+            if ( item.classList.contains('half-up') ) {
+                item.style.marginTop = '-' + item.clientHeight / 2 + 'px'
+            } else if( item.classList.contains('third-up') ) {
+                item.style.marginTop = '-' + item.clientHeight / 3 + 'px'
+            }
+        })
+}
+
 window.addEventListener('DOMContentLoaded', function () {
 
+    // Run functions if element exists
     if ( $('.call_to_action')) {
         spinningButton()
     }
 
     if ( $('.nav .popup')) {
         callPopup()
+    }
+
+    if ( $('call-to-action')) {
+        callToAction()
     }
 
 })
