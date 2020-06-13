@@ -50,6 +50,15 @@ a {
   to {
     transform: rotate(360deg); } }
 
+.mt-10 {
+  margin-top: 10rem; }
+
+.mt-5 {
+  margin-top: 5rem; }
+
+.mt-2 {
+  margin-top: 2rem; }
+
 .nav {
   position: fixed;
   top: 0;
@@ -180,8 +189,6 @@ a {
 .section-services {
   width: 100%;
   padding-bottom: 3rem; }
-  .section-services .call_to_action {
-    margin-top: -4rem; }
   .section-services .section-title {
     margin: 4rem auto; }
   .section-services__content {
@@ -255,8 +262,6 @@ a {
 .section-part {
   width: 100%;
   padding-bottom: 7rem; }
-  .section-part .call_to_action {
-    margin-top: -11rem; }
   .section-part__content {
     width: 100%;
     margin: auto;
@@ -392,10 +397,80 @@ a {
             line-height: 140%;
             transition: all 0.7s; }
 
+.section-contact {
+  width: 100%;
+  margin: 10rem 0; }
+  .section-contact__content {
+    margin: auto;
+    max-width: 125rem;
+    width: 100%;
+    min-height: 54rem;
+    background-color: #253D93;
+    display: flex; }
+    .section-contact__content-left {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      padding: 7rem 6rem 5rem 6rem;
+      position: relative; }
+      .section-contact__content-left .background {
+        position: absolute;
+        right: 0;
+        top: 5rem;
+        z-index: -1; }
+      .section-contact__content-left .top {
+        height: 70%;
+        border-bottom: 1px solid #2F48A5; }
+        .section-contact__content-left .top .title {
+          font-weight: 500;
+          font-size: 3.4rem;
+          color: #fff;
+          width: 50%;
+          margin-bottom: 4rem; }
+        .section-contact__content-left .top .descr {
+          color: #fff; }
+      .section-contact__content-left .bottom {
+        height: 30%;
+        color: #FFB240;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; }
+        .section-contact__content-left .bottom .phone {
+          color: inherit;
+          font-size: 2.8rem;
+          font-weight: bold; }
+        .section-contact__content-left .bottom .descr {
+          color: inherit;
+          font-size: 1.6rem;
+          font-weight: 500; }
+    .section-contact__content-right {
+      width: 55%;
+      background-color: #1E3176; }
+      .section-contact__content-right .top {
+        height: 70%; }
+      .section-contact__content-right .bottom {
+        padding: 5rem 6.5rem;
+        display: flex;
+        justify-content: space-between; }
+        .section-contact__content-right .bottom .descr {
+          width: 80%;
+          border-right: 1px solid #2F48A5;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-right: 5rem; }
+          .section-contact__content-right .bottom .descr .address {
+            color: #FFB240;
+            font-size: 1.8rem;
+            font-weight: 500; }
+          .section-contact__content-right .bottom .descr p {
+            color: #fff;
+            font-size: 1.2rem; }
+
 body {
   background-color: #F4F4F4; }
 
-.call_to_action {
+call-to-action {
   max-width: 125rem;
   width: 100%;
   height: 22rem;
@@ -405,36 +480,36 @@ body {
   align-items: center;
   position: relative;
   margin: auto; }
-  .call_to_action .image {
+  call-to-action .image {
     height: 100%;
     background-color: #FFB240; }
-    .call_to_action .image img {
+    call-to-action .image img {
       height: 100%; }
-  .call_to_action .content {
+  call-to-action .content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
     padding: 0 6.6rem;
     width: 60%; }
-    .call_to_action .content h2 {
+    call-to-action .content h2 {
       font-size: 2.4rem;
       width: 65%;
       color: #323A56;
       line-height: 120%; }
-  .call_to_action .button {
+  call-to-action .button {
     position: relative;
     width: 30%; }
-    .call_to_action .button .btn {
+    call-to-action .button .btn {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: max-content;
       z-index: 2; }
-    .call_to_action .button .active {
+    call-to-action .button .active {
       animation: spin 5s infinite; }
-    .call_to_action .button img {
+    call-to-action .button img {
       margin: auto;
       margin-left: -4rem;
       z-index: 1; }
