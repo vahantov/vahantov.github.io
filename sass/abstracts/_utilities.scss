@@ -1,19 +1,23 @@
 .mt-10 {
-  margin-top: 10rem;
+  margin-top: 10rem !important;
 }
 
 .mt-5 {
-  margin-top: 5rem;
+  margin-top: 5rem !important;
 }
 
 .mt-2 {
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 
 .mt-y-10 {
-  margin: 10rem 0;
+  margin: 10rem 0 !important;
 }
 
 .p-5 {
-  padding: 5rem;
+  padding: 5rem !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
 }

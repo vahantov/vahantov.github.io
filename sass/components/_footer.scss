@@ -1,0 +1,25 @@
+footer {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  max-width: $content-width;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  border-top: 1px solid $color-gray;
+  left: 50%;
+  transform: translateX(-50%);
+
+  & > * {
+    color: $color-gray;
+    font-size: 1.6rem;
+
+  }
+  a {
+    border-bottom: 1px solid transparent;
+    transition: all $default-transition-duration;
+  }
+  a:hover {
+    border-color: $color-gray;
+  }
+}
