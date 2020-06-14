@@ -1,0 +1,21 @@
+page-title {
+  display: block;
+  width: 100%;
+  max-width: $content-width;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3rem;
+  padding: 5rem 0;
+
+  span {
+    font-size: 1.3rem;
+    color: $color-gray;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  h1 {
+    font-size: 4.8rem;
+    font-weight: bold;
+  }
+}

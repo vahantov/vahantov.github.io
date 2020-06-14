@@ -8,31 +8,6 @@ function $(item, arr) {
     }
 }
 
-function spinningButton () {
-    const boxes = $('.call_to_action', true)
-
-    boxes.forEach(elem => {
-        const btn = elem.querySelector('.btn'),
-            img = elem.querySelector('.button img')
-
-            btn.addEventListener('mouseover', async () => {
-                if ( !img.classList.contains('active') ) {
-                    await img.classList.add('active')
-                    
-                    btn.addEventListener('mouseout', () => {
-                        img.addEventListener('webkitAnimationIteration', () => {
-                            img.classList.remove('active')
-                        }, {
-                            once: true
-                        })
-                    }, {
-                        once: true
-                    })
-                }
-            })
-    });
-}
-
 function callPopup() {
 
     const btn = $('.nav .number'),
@@ -75,11 +50,6 @@ function callToAction() {
 }
 
 window.addEventListener('DOMContentLoaded', function () {
-
-    // Run functions if element exists
-    if ( $('.call_to_action')) {
-        spinningButton()
-    }
 
     if ( $('.nav .popup')) {
         callPopup()
