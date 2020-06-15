@@ -114,10 +114,10 @@ a {
           .nav_content-menu ul li:after {
             content: "";
             position: absolute;
-            bottom: 0;
+            bottom: -.2rem;
             left: 0;
             width: 0;
-            border-bottom: 1px solid #fff;
+            border-bottom: 2px solid #fff;
             opacity: .5;
             transition: all .5s ease; }
           .nav_content-menu ul li.marked:after {
@@ -620,9 +620,9 @@ a {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: #595f74;
+      color: #253D93;
       font-size: 2rem;
-      font-weight: lighter; }
+      font-weight: 400; }
 
 .slick-track {
   display: flex; }

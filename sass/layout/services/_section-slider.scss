@@ -73,9 +73,9 @@
 
     i {
       @include centering;
-      color: $color-text-gray;
+      color: $color-blue-primary;
       font-size: 2rem;
-      font-weight: lighter;
+      font-weight: 400;
     }
   }
 }
