@@ -1,0 +1,73 @@
+.service-action {
+  width: 100%;
+  max-width: $service-action-width;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  min-height: 13rem;
+  padding: 2rem;
+  background: linear-gradient(90deg, transparent 0%, transparent 60%, $color-yellow-primary 60%, $color-yellow-primary 100%);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .descr {
+    width: 35%;
+    flex-direction: row;
+    position: relative;
+
+    .button {
+      position: relative;
+      margin-right: 2rem;
+
+      a {
+        font-size: 2rem;
+        padding: 2rem;
+        position: relative;
+        z-index: 2;
+        display: block;
+
+        i {
+          font-weight: 300;
+        }
+
+        &:after {
+          content: "";
+          display: inline-block;
+          @include centering;
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          background-color: #FF9800;
+          z-index: -1;
+        }
+      }
+
+      img {
+        @include centering;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 60%;
+    }
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: $color-text-primary;
+  }
+
+  p {
+    font-size: 1.3rem;
+    color: $color-text-gray;
+  }
+}

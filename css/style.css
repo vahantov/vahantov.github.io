@@ -72,6 +72,15 @@ a {
 .pb-0 {
   padding-bottom: 0 !important; }
 
+.breadcrumbs {
+  font-size: 1.3rem;
+  color: #acafb9;
+  margin-bottom: 1rem;
+  display: block; }
+
+.color_blue_light {
+  color: #75BDFF !important; }
+
 .nav {
   position: fixed;
   top: 0;
@@ -453,6 +462,40 @@ a {
 .services-main > * {
   margin-bottom: 4rem; }
 
+.viveski-header {
+  width: 100%;
+  background-color: #253D93;
+  min-height: 48rem;
+  padding-top: 6rem; }
+  .viveski-header-content {
+    width: 100%;
+    max-width: 125rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
+    .viveski-header-content__left {
+      width: 50%; }
+      .viveski-header-content__left h1 {
+        color: #fff;
+        font-weight: bold;
+        font-size: 4.8rem;
+        margin-bottom: 3.5rem; }
+      .viveski-header-content__left p {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 140%; }
+      .viveski-header-content__left .links {
+        display: flex;
+        margin-top: 4rem; }
+        .viveski-header-content__left .links a {
+          margin-right: 2rem; }
+    .viveski-header-content__right {
+      overflow: hidden;
+      position: relative; }
+      .viveski-header-content__right img {
+        height: 100%; }
+
 call-to-action {
   max-width: 125rem;
   width: 100%;
@@ -773,3 +816,62 @@ footer {
     transition: all 0.7s; }
   footer a:hover {
     border-color: #acafb9; }
+
+.service-action {
+  width: 100%;
+  max-width: 110rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  min-height: 13rem;
+  padding: 2rem;
+  background: linear-gradient(90deg, transparent 0%, transparent 60%, #FFB240 60%, #FFB240 100%); }
+  .service-action div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .service-action .descr {
+    width: 35%;
+    flex-direction: row;
+    position: relative; }
+    .service-action .descr .button {
+      position: relative;
+      margin-right: 2rem; }
+      .service-action .descr .button a {
+        font-size: 2rem;
+        padding: 2rem;
+        position: relative;
+        z-index: 2;
+        display: block; }
+        .service-action .descr .button a i {
+          font-weight: 300; }
+        .service-action .descr .button a:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          background-color: #FF9800;
+          z-index: -1; }
+      .service-action .descr .button img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .service-action .descr .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 60%; }
+  .service-action h3 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: #323A56; }
+  .service-action p {
+    font-size: 1.3rem;
+    color: #595f74; }

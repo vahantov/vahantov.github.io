@@ -3,6 +3,13 @@ function header() {
     pageContent.style.marginTop = $('nav').clientHeight + 'px';
 }
 
+function marginNav() {
+    let node = $(".margin-nav", true)
+    node.forEach(item => {
+        item.style.marginTop = $('nav').clientHeight + 'px';
+    })
+}
+
 function spinningButton () {
     const boxes = $('call-to-action', true)
 
@@ -35,5 +42,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     if ( $('call-to-action')) {
         spinningButton()
+    }
+
+    if ( $(".margin-nav")) {
+        marginNav()
     }
 })

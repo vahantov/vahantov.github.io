@@ -1,0 +1,44 @@
+.viveski-header {
+  width: 100%;
+  background-color: $color-blue-primary;
+  min-height: 48rem;
+  padding-top: 6rem;
+  &-content {
+    width: 100%;
+    max-width: $content-width;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+      width: 50%;
+      h1 {
+        color: $color-white;
+        font-weight: bold;
+        font-size: 4.8rem;
+        margin-bottom: 3.5rem;
+      }
+      p  {
+        color: $color-white;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 140%;
+      }
+      .links {
+        display: flex;
+        margin-top: 4rem;
+        a {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    &__right {
+      overflow: hidden;
+      position: relative;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}

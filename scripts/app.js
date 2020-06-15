@@ -38,7 +38,7 @@ function callPopup() {
 }
 
 function callToAction() {
-    let box = $('call-to-action', true)
+    let box = $('.half-up', true)
 
         box.forEach(item => {
             if ( item.classList.contains('half-up') ) {
