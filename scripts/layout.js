@@ -1,17 +1,18 @@
 function header() {
-    let pageContent = $('main')
-    pageContent.style.marginTop = $('nav').clientHeight + 'px';
+    let pageContent = $$('main')
+    pageContent.style.marginTop = $$('nav').clientHeight + 'px';
 }
 
 function marginNav() {
-    let node = $(".margin-nav", true)
+    let node = $$('.margin-nav', true)
+
     node.forEach(item => {
-        item.style.marginTop = $('nav').clientHeight + 'px';
+        item.style.marginTop = $$('nav').clientHeight + 'px';
     })
 }
 
 function spinningButton () {
-    const boxes = $('.spinning-button', true)
+    const boxes = $$('.spinning-button', true)
 
     boxes.forEach(elem => {
         const btn = elem.querySelector('.button a'),
@@ -36,15 +37,27 @@ function spinningButton () {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    if ( $('main.mt-nav')) {
+    if ( $$('main.mt-nav')) {
         header()
     }
 
-    if ( $('.spinning-button')) {
+    if ( $$('.spinning-button')) {
         spinningButton()
     }
 
-    if ( $(".margin-nav")) {
+    if ( $$('.margin-nav')) {
         marginNav()
+    }
+
+    if ( $$('.services-section-slider__content')) {
+        $('.services-section-slider__content').slick({
+            centerMode: true,
+            slidesToShow: 3,
+            infinite: true,
+            variableWidth: true,
+            zIndex: 1,
+            prevArrow: $('.services-section-slider .arrows .left'),
+            nextArrow: $('.services-section-slider .arrows .right')
+        })
     }
 })

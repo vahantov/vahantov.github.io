@@ -1,6 +1,6 @@
 'use strict'
 
-function $(item, arr) {
+function $$(item, arr) {
     if ( !arr ) {
         return document.querySelector(item)
     } else {
@@ -10,8 +10,8 @@ function $(item, arr) {
 
 function callPopup() {
 
-    const btn = $('.nav .number'),
-        popup = $('.nav .popup')
+    const btn = $$('.nav .number'),
+        popup = $$('.nav .popup')
 
     btn.addEventListener('mouseover', () => {
         if ( popup.classList.contains('active') ) {
@@ -38,7 +38,7 @@ function callPopup() {
 }
 
 function halfUp () {
-    const node = $('.half-up', true)
+    const node = $$('.half-up', true)
 
     node.forEach(item => {
         item.style.marginTop = '-' + item.clientHeight / 2 + 'px'
@@ -46,7 +46,7 @@ function halfUp () {
 }
 
 function thirdUp() {
-    const node = $('.third-up', true)
+    const node = $$('.third-up', true)
 
     node.forEach(item => {
         item.style.marginTop = '-' + item.clientHeight / 3 + 'px'
@@ -55,15 +55,15 @@ function thirdUp() {
 
 window.addEventListener('DOMContentLoaded', function () {
 
-    if ( $('.nav .popup')) {
+    if ( $$('.nav .popup')) {
         callPopup()
     }
 
-    if ( $('.half-up')) {
+    if ( $$('.half-up')) {
         halfUp()
     }
 
-    if ( $('.third-up')) {
+    if ( $$('.third-up')) {
         thirdUp()
     }
 

@@ -1,0 +1,91 @@
+.services-section-slider {
+  width: 100%;
+  background-color: $color-blue-primary;
+  margin-top: -10rem;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+  position: relative;
+
+  &__content {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    justify-content: space-between;
+    position: relative;
+
+    .item {
+      width: 83rem;
+      height: auto;
+      text-align: center;
+      display: inline-block;
+      margin: auto 5rem;
+
+      p {
+        color: $color-gray;
+        font-size: 1.3rem;
+        opacity: 0;
+        transition: all $default-transition-duration;
+      }
+    }
+  }
+
+  .arrows {
+    width: 99rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+
+    & > * {
+      width: 6rem;
+      height: 6rem;
+      background-color: $color-white;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: inline-block;
+        @include centering;
+        height: 0;
+        width: 0;
+        background-color: $color-gray-primary;
+        transition: all $default-transition-duration;
+      }
+    }
+
+    .right:hover {
+      &:after {
+        height: 6rem;
+        width: 6rem;
+      }
+    }
+
+    .left:hover {
+      &:after {
+        height: 6rem;
+        width: 6rem;
+      }
+    }
+
+    i {
+      @include centering;
+      color: $color-text-gray;
+      font-size: 2rem;
+      font-weight: lighter;
+    }
+  }
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-center {
+  p {
+    opacity: 1 !important;
+  }
+}
