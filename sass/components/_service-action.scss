@@ -6,7 +6,9 @@
   margin: auto;
   min-height: 13rem;
   padding: 2rem;
-  background: linear-gradient(90deg, transparent 0%, transparent 60%, $color-yellow-primary 60%, $color-yellow-primary 100%);
+  position: relative;
+  background: linear-gradient(90deg, $color-white 0%, $color-white 60%, $color-yellow-primary 60%, $color-yellow-primary 100%);
+  z-index: 3;
 
   div {
     display: flex;
@@ -23,10 +25,14 @@
       position: relative;
       margin-right: 2rem;
 
+      .active {
+        animation: spin 5s infinite;
+      }
+
       a {
         font-size: 2rem;
         padding: 2rem;
-        position: relative;
+        @include centering;
         z-index: 2;
         display: block;
 
@@ -41,13 +47,31 @@
           width: 5rem;
           height: 5rem;
           border-radius: 50%;
-          background-color: #FF9800;
+          background-color: darken($color-yellow-primary, 12%);
+          z-index: -3;
+        }
+
+        &:before {
+          content: "";
+          display: inline-block;
+          @include centering;
+          border-radius: 50%;
+          background-color: darken($color-yellow-primary, 15%);
           z-index: -1;
+          height: 0;
+          width: 0;
+          transition: all $default-transition-duration;
+        }
+
+        &:hover {
+          &:before {
+            height: 5rem;
+            width: 5rem;
+          }
         }
       }
 
       img {
-        @include centering;
       }
     }
 

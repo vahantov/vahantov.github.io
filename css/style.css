@@ -492,7 +492,8 @@ a {
           margin-right: 2rem; }
     .viveski-header-content__right {
       overflow: hidden;
-      position: relative; }
+      position: relative;
+      z-index: 1; }
       .viveski-header-content__right img {
         height: 100%; }
 
@@ -825,7 +826,9 @@ footer {
   margin: auto;
   min-height: 13rem;
   padding: 2rem;
-  background: linear-gradient(90deg, transparent 0%, transparent 60%, #FFB240 60%, #FFB240 100%); }
+  position: relative;
+  background: linear-gradient(90deg, #fff 0%, #fff 60%, #FFB240 60%, #FFB240 100%);
+  z-index: 3; }
   .service-action div {
     display: flex;
     flex-direction: column;
@@ -837,10 +840,15 @@ footer {
     .service-action .descr .button {
       position: relative;
       margin-right: 2rem; }
+      .service-action .descr .button .active {
+        animation: spin 5s infinite; }
       .service-action .descr .button a {
         font-size: 2rem;
         padding: 2rem;
-        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 2;
         display: block; }
         .service-action .descr .button a i {
@@ -855,13 +863,24 @@ footer {
           width: 5rem;
           height: 5rem;
           border-radius: 50%;
-          background-color: #FF9800;
-          z-index: -1; }
-      .service-action .descr .button img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
+          background-color: #ff9903;
+          z-index: -3; }
+        .service-action .descr .button a:before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          background-color: #f39100;
+          z-index: -1;
+          height: 0;
+          width: 0;
+          transition: all 0.7s; }
+        .service-action .descr .button a:hover:before {
+          height: 5rem;
+          width: 5rem; }
     .service-action .descr .content {
       display: flex;
       flex-direction: column;

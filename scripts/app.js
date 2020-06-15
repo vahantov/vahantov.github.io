@@ -37,16 +37,20 @@ function callPopup() {
     })
 }
 
-function callToAction() {
-    let box = $('.half-up', true)
+function halfUp () {
+    const node = $('.half-up', true)
 
-        box.forEach(item => {
-            if ( item.classList.contains('half-up') ) {
-                item.style.marginTop = '-' + item.clientHeight / 2 + 'px'
-            } else if( item.classList.contains('third-up') ) {
-                item.style.marginTop = '-' + item.clientHeight / 3 + 'px'
-            }
-        })
+    node.forEach(item => {
+        item.style.marginTop = '-' + item.clientHeight / 2 + 'px'
+    })
+}
+
+function thirdUp() {
+    const node = $('.third-up', true)
+
+    node.forEach(item => {
+        item.style.marginTop = '-' + item.clientHeight / 3 + 'px'
+    })
 }
 
 window.addEventListener('DOMContentLoaded', function () {
@@ -55,8 +59,12 @@ window.addEventListener('DOMContentLoaded', function () {
         callPopup()
     }
 
-    if ( $('call-to-action')) {
-        callToAction()
+    if ( $('.half-up')) {
+        halfUp()
+    }
+
+    if ( $('.third-up')) {
+        thirdUp()
     }
 
 })

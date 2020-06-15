@@ -11,7 +11,7 @@ function marginNav() {
 }
 
 function spinningButton () {
-    const boxes = $('call-to-action', true)
+    const boxes = $('.spinning-button', true)
 
     boxes.forEach(elem => {
         const btn = elem.querySelector('.button a'),
@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
         header()
     }
 
-    if ( $('call-to-action')) {
+    if ( $('.spinning-button')) {
         spinningButton()
     }
 
