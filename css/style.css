@@ -37,6 +37,9 @@ body {
   padding-bottom: 15rem;
   position: relative; }
 
+main {
+  padding: 0 2rem; }
+
 *:not(nav) {
   z-index: 1; }
 
@@ -418,6 +421,8 @@ a {
             color: #595f74; }
       .section-map__content .content > * {
         width: 50%; }
+    .section-map__content .map {
+      height: 50rem; }
 
 .services {
   width: 100%; }
@@ -633,7 +638,7 @@ a {
 call-to-action {
   max-width: 125rem;
   width: 100%;
-  height: 22rem;
+  min-height: 22rem;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -777,6 +782,7 @@ call-to-action {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   height: 100%; }
   .service-grid.grid .icon {
     align-items: flex-start !important; }

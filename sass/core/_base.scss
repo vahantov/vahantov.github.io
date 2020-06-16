@@ -15,6 +15,10 @@ body {
   position: relative;
 }
 
+main {
+  padding: 0 2rem;
+}
+
 *:not(nav) {
   z-index: 1;
 }

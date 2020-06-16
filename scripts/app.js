@@ -25,9 +25,21 @@ function callPopup() {
                         popup.classList.remove('active')
                     }
                 })*/
+
+                /* Remove timeout if popup not hovered */
+                const timeOut = setTimeout(() => {
+                    popup.classList.remove('active')
+                }, 2000)
+
+                popup.addEventListener('mouseenter', () => {
+                    clearTimeout(timeOut)
+                })
+                /* --- */
+
                 popup.addEventListener("mouseleave", () => {
                     popup.classList.remove('active')
                 })
+
                /* window.addEventListener('scroll', () => { // Убираем попал при скроле
                     popup.classList.remove('active')
                 })*/
