@@ -721,12 +721,14 @@ a {
   padding-top: 15rem;
   padding-bottom: 10rem;
   position: relative; }
-  .services-section-testimonials__content .item {
-    width: 125rem;
-    height: auto;
-    text-align: center;
-    display: inline-block;
-    margin: auto 5rem; }
+  .services-section-testimonials__content {
+    overflow: hidden; }
+    .services-section-testimonials__content .item {
+      width: 125rem;
+      height: auto;
+      text-align: center;
+      display: inline-block;
+      margin: auto 5rem; }
   .services-section-testimonials .arrows {
     width: 120rem;
     display: flex;
