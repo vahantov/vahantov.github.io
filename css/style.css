@@ -84,8 +84,11 @@ a {
   margin-bottom: 1rem;
   display: block; }
 
-.color_blue_light {
+.color-blue-light {
   color: #75BDFF !important; }
+
+.color-white {
+  color: #fff !important; }
 
 .nav {
   position: fixed;
@@ -579,7 +582,8 @@ a {
 
 .services-section-privileges {
   margin-top: 10rem;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20rem; }
   .services-section-privileges__content {
     width: 100%;
     max-width: 105rem;
@@ -628,6 +632,43 @@ a {
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%); }
+
+.services-section-work {
+  width: 100%;
+  background-color: #253D93;
+  margin-top: -12rem;
+  padding-top: 12rem;
+  padding-bottom: 8rem; }
+  .services-section-work__content {
+    width: 100%;
+    max-width: 125rem;
+    margin: auto; }
+    .services-section-work__content .list {
+      display: flex;
+      justify-content: space-between; }
+      .services-section-work__content .list .item {
+        width: 24rem; }
+        .services-section-work__content .list .item svg {
+          fill: #1E3176;
+          transition: all 0.7s; }
+        .services-section-work__content .list .item h3 {
+          font-weight: 500;
+          font-size: 1.8rem;
+          color: #fff;
+          margin: 2.4rem 0; }
+        .services-section-work__content .list .item p {
+          font-size: 1.6rem;
+          line-height: 140%;
+          color: #fff;
+          opacity: .5;
+          transition: all 0.7s; }
+        .services-section-work__content .list .item:hover svg {
+          fill: #FFB240; }
+        .services-section-work__content .list .item:hover p {
+          opacity: 1; }
+    .services-section-work__content .title {
+      padding: 12rem 0 4rem 0;
+      color: #fff; }
 
 call-to-action {
   max-width: 125rem;
@@ -1046,6 +1087,18 @@ footer {
     text-align: center;
     display: inline-block;
     margin: auto 5rem; }
+    .slider__content .item image {
+      height: 57rem;
+      width: 83rem;
+      position: relative;
+      overflow: hidden; }
+      .slider__content .item image img {
+        height: 100%;
+        width: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
     .slider__content .item p {
       color: #acafb9;
       font-size: 1.3rem;

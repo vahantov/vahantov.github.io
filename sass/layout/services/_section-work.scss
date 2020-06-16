@@ -1,0 +1,57 @@
+.services-section-work {
+  width: 100%;
+  background-color: $color-blue-primary;
+  margin-top: -12rem;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+
+  &__content {
+    width: 100%;
+    max-width: $content-width;
+    margin: auto;
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+
+      .item {
+        width: 24rem;
+
+        svg {
+          fill: $color-blue-primary-dark;
+          transition: all $default-transition-duration;
+        }
+
+        h3 {
+          font-weight: 500;
+          font-size: 1.8rem;
+          color: $color-white;
+          margin: 2.4rem 0;
+        }
+
+        p {
+          font-size: 1.6rem;
+          line-height: 140%;
+          color: $color-white;
+          opacity: .5;
+          transition: all $default-transition-duration;
+        }
+
+        &:hover {
+          svg {
+            fill: $color-yellow-primary;
+          }
+
+          p {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .title {
+      padding: 12rem 0 4rem 0;
+      color: $color-white;
+    }
+  }
+}

@@ -13,6 +13,19 @@
       display: inline-block;
       margin: auto 5rem;
 
+      image {
+        height: 57rem;
+        width: 83rem;
+        position: relative;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+          width: auto;
+          @include centering
+        }
+      }
+
       p {
         color: $color-gray;
         font-size: 1.3rem;
