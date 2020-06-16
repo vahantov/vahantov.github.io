@@ -1,0 +1,71 @@
+.services-section-privileges {
+  margin-top: 10rem;
+  width: 100%;
+
+  &__content {
+    width: 100%;
+    max-width: $content-width-small;
+    margin: auto;
+
+    .item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 33rem;
+      position: relative;
+      background-color: $color-white;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      .left {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .right {
+        padding: 4rem;
+        width: 50%;
+
+        .descr {
+          margin-top: 2rem;
+        }
+
+        .title {
+          display: flex;
+          padding-bottom: 2rem;
+          border-bottom: 1px solid $color-gray-primary;
+
+          h1 {
+            width: 80%;
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 120%;
+          }
+
+          .icon {
+            text-align: center;
+            width: 30%;
+            position: relative;
+
+            img {
+              width: 4.8rem;
+              @include centering
+            }
+          }
+        }
+      }
+    }
+  }
+}
