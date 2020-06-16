@@ -15,8 +15,14 @@ body {
   position: relative;
 }
 
-main {
-  padding: 0 2rem;
+.slick-track {
+  display: flex;
+}
+
+.slick-center {
+  p {
+    opacity: 1 !important;
+  }
 }
 
 *:not(nav) {

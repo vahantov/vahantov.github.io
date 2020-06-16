@@ -49,8 +49,8 @@ window.addEventListener('DOMContentLoaded', () => {
         marginNav()
     }
 
-    if ( $$('.services-section-slider__content')) {
-        $('.services-section-slider__content').slick({
+    if ( $$('.slider')) {
+        $('.slider__content').slick({
             centerMode: true,
             slidesToShow: 3,
             infinite: true,
