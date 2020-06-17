@@ -60,4 +60,15 @@ window.addEventListener('DOMContentLoaded', () => {
             nextArrow: $('.services-section-slider .arrows .right')
         })
     }
+
+    if ( $$('.testimonials')) {
+        $('.testimonials__content').slick({
+            centerMode: true,
+            slidesToShow: 1,
+            infinite: true,
+            zIndex: 1,
+            prevArrow: $('.testimonials .arrows .left'),
+            nextArrow: $('.testimonials .arrows .right')
+        })
+    }
 })
