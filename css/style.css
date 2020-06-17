@@ -643,6 +643,33 @@ a {
             transition: all 0.7s; }
       .services-section-type__content .item:hover .descr .hidden {
         max-width: 10rem; }
+  .services-section-type.grid .services-section-type__content {
+    justify-content: space-evenly;
+    max-width: 125rem; }
+  .services-section-type.grid .item {
+    margin: 0 2rem;
+    width: 27rem;
+    height: 24rem;
+    position: relative; }
+    .services-section-type.grid .item:hover .descr {
+      background-color: #fff; }
+      .services-section-type.grid .item:hover .descr h3 {
+        color: #323A56; }
+    .services-section-type.grid .item .descr {
+      flex-direction: row;
+      width: 100%;
+      min-height: 8rem;
+      height: min-content;
+      align-items: center;
+      padding: 2.4rem 1.6rem;
+      transition: all 0.7s; }
+      .services-section-type.grid .item .descr h3 {
+        font-size: 1.6rem;
+        transition: all 0.7s;
+        color: #fff;
+        font-weight: 500; }
+      .services-section-type.grid .item .descr .link {
+        margin: 0 1rem; }
 
 .services-section-slider {
   width: 100%;

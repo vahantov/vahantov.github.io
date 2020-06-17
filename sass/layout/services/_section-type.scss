@@ -83,4 +83,50 @@
       }
     }
   }
+
+  &.grid {
+
+    .services-section-type__content {
+      justify-content: space-evenly;
+      max-width: $content-width;
+    }
+
+    .item {
+      margin: 0 2rem;
+      width: 27rem;
+      height: 24rem;
+      position: relative;
+
+      &:hover {
+        .descr {
+          background-color: $color-white;
+
+          h3 {
+            color: $color-text-primary;
+          }
+        }
+      }
+
+      .descr {
+        flex-direction: row;
+        width: 100%;
+        min-height: 8rem;
+        height: min-content;
+        align-items: center;
+        padding: 2.4rem 1.6rem;
+        transition: all $default-transition-duration;
+
+        h3 {
+          font-size: 1.6rem;
+          transition: all $default-transition-duration;
+          color: $color-white;
+          font-weight: 500;
+        }
+
+        .link {
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
 }
