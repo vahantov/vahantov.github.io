@@ -1,0 +1,27 @@
+.portfolio-navigation {
+  width: 100%;
+  max-width: $content-width;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  button {
+    border-radius: $default-border-radius;
+    background-color: $color-white;
+    border: none;
+    color: $color-text-primary;
+    transition: all $default-transition-duration;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin: 0 2rem;
+
+    &:hover {
+      background-color: darken($color-white, 10%);
+    }
+  }
+
+  button.mixitup-control-active {
+    background-color: $color-yellow-primary;
+  }
+}

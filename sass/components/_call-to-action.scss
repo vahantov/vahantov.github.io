@@ -9,12 +9,14 @@ call-to-action {
   position: relative;
   margin: auto;
   z-index: 5;
+  margin-bottom: 2rem;
 
   .image {
     height: 100%;
     background-color: $color-yellow-primary;
 
     img{
+      margin-bottom: -3px;
       height: 100%;
     }
   }

@@ -81,4 +81,15 @@ window.addEventListener('DOMContentLoaded', () => {
             nextArrow: $('.index-slider .arrows .right')
         })
     }
+
+    if ( $$('body.portfolio')) {
+        var mixer = mixitup('.portfolio-content', {
+            selectors: {
+                target: '.portfolio-content .item'
+            },
+            animation: {
+                duration: 300
+            }
+        });
+    }
 })

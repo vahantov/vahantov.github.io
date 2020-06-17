@@ -1,0 +1,20 @@
+.portfolio-content {
+  width: 100%;
+  max-width: $content-width;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .item {
+    margin-bottom: 6.4rem;
+
+    p {
+      text-align: center;
+      color: $color-text-gray;
+      font-size: 1.3rem;
+      opacity: 1;
+      transition: all $default-transition-duration;
+    }
+  }
+}
