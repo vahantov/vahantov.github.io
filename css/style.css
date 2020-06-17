@@ -218,8 +218,7 @@ a {
         margin-bottom: 1.5rem; }
 
 .section-services {
-  width: 100%;
-  padding-bottom: 3rem; }
+  width: 100%; }
   .section-services .section-title {
     margin: 4rem auto; }
   .section-services__content {
@@ -429,6 +428,81 @@ a {
         width: 50%; }
     .section-map__content .map {
       height: 50rem; }
+
+.section-slider {
+  width: 100%;
+  background-color: #253D93;
+  margin: 12rem 0; }
+  .section-slider__content {
+    width: 100%;
+    max-width: 115rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 12.8rem 0; }
+    .section-slider__content .index-slider {
+      width: 58rem;
+      height: 40rem;
+      position: relative;
+      overflow: hidden; }
+      .section-slider__content .index-slider .arrows {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex; }
+        .section-slider__content .index-slider .arrows div {
+          transition: all 0.7s;
+          cursor: pointer; }
+        .section-slider__content .index-slider .arrows div:hover {
+          background-color: #14204d; }
+        .section-slider__content .index-slider .arrows > * {
+          padding: 1.9rem 2rem;
+          background-color: #1E3176; }
+          .section-slider__content .index-slider .arrows > * i {
+            font-weight: 300;
+            font-size: 1.6rem;
+            color: #fff; }
+      .section-slider__content .index-slider .content {
+        height: 100%;
+        width: 100%; }
+        .section-slider__content .index-slider .content .item {
+          overflow: hidden;
+          position: relative;
+          width: 58rem;
+          height: 40rem; }
+          .section-slider__content .index-slider .content .item img {
+            height: 100%; }
+    .section-slider__content .title {
+      width: 20%;
+      overflow: visible;
+      position: relative; }
+      .section-slider__content .title h1 {
+        color: #fff; }
+      .section-slider__content .title img {
+        position: absolute;
+        bottom: -2rem;
+        left: -5rem;
+        width: 120%;
+        z-index: -1; }
+    .section-slider__content .descr {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .section-slider__content .descr h3 {
+        color: #75BDFF;
+        font-size: 1.8rem;
+        line-height: 140%;
+        font-weight: 500; }
+      .section-slider__content .descr p {
+        font-size: 1.6rem;
+        line-height: 140%;
+        color: #fff; }
+      .section-slider__content .descr span {
+        font-size: 1.3rem;
+        line-height: 140%;
+        color: #fff;
+        opacity: .5; }
 
 .services {
   width: 100%; }

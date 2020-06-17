@@ -71,4 +71,14 @@ window.addEventListener('DOMContentLoaded', () => {
             nextArrow: $('.testimonials .arrows .right')
         })
     }
+
+    if ( $$('.index-slider')) {
+        $('.index-slider .content').slick({
+            slidesToShow: 1,
+            infinite: true,
+            zIndex: 1,
+            prevArrow: $('.index-slider .arrows .left'),
+            nextArrow: $('.index-slider .arrows .right')
+        })
+    }
 })

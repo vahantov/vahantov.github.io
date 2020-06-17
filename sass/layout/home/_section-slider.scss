@@ -1,0 +1,109 @@
+.section-slider {
+  width: 100%;
+  background-color: $color-blue-primary;
+  margin: $default-section-mt-large 0;
+
+  &__content {
+    width: 100%;
+    max-width: $content-width - 10;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 12.8rem 0;
+
+    .index-slider {
+      width: 58rem;
+      height: 40rem;
+      position: relative;
+      overflow: hidden;
+
+      .arrows {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+
+        div {
+          transition: all $default-transition-duration;
+          cursor: pointer;
+        }
+
+        div:hover {
+          background-color: darken($color-blue-primary-dark, 10%);
+        }
+
+        & > * {
+          padding: 1.9rem 2rem;
+          background-color: $color-blue-primary-dark;
+
+          i {
+            font-weight: 300;
+            font-size: 1.6rem;
+            color: $color-white;
+          }
+        }
+      }
+
+      .content {
+        height: 100%;
+        width: 100%;
+
+        .item {
+          overflow: hidden;
+          position: relative;
+          width: 58rem;
+          height: 40rem;
+
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .title {
+      width: 20%;
+      overflow: visible;
+      position: relative;
+
+      h1 {
+        color: $color-white;
+      }
+
+      img {
+        position: absolute;
+        bottom: -2rem;
+        left: -5rem;
+        width: 120%;
+        z-index: -1;
+      }
+    }
+
+    .descr {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3 {
+        color: $color-blue-primary-hover;
+        font-size: 1.8rem;
+        line-height: 140%;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 1.6rem;
+        line-height: 140%;
+        color: $color-white;
+      }
+
+      span {
+        font-size: 1.3rem;
+        line-height: 140%;
+        color: $color-white;
+        opacity: .5;
+      }
+    }
+  }
+}
