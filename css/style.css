@@ -56,6 +56,42 @@ a {
   text-align: center;
   margin: 5rem 0; }
 
+.cookies {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 1.6rem 0;
+  width: 100%;
+  z-index: 10;
+  align-items: center; }
+  .cookies p {
+    font-size: 13px;
+    line-height: 140%;
+    color: #595f74;
+    opacity: .5;
+    margin-right: 4rem; }
+    .cookies p a {
+      color: #595f74;
+      text-decoration: underline;
+      font-size: 13px; }
+      .cookies p a:hover {
+        color: #323A56; }
+  .cookies button {
+    border: 1px solid #D0D0D0;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 10px;
+    line-height: 160%;
+    color: #323A56;
+    padding: .6rem 2rem;
+    transition: all 0.7s; }
+    .cookies button:hover {
+      cursor: pointer;
+      border-color: #acafb9;
+      background-color: #F4F4F4; }
+
 @keyframes spin {
   to {
     transform: rotate(360deg); } }
