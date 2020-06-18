@@ -90,6 +90,19 @@ a {
 .color-white {
   color: #fff !important; }
 
+.content-width {
+  width: 100%;
+  max-width: 125rem !important; }
+
+.d-flex {
+  display: flex !important; }
+
+.justify-content-center {
+  justify-content: center !important; }
+
+.flex-direction-column {
+  flex-direction: column !important; }
+
 .nav {
   position: fixed;
   top: 0;
@@ -916,6 +929,160 @@ a {
   .portfolio-navigation button.mixitup-control-active {
     background-color: #FFB240; }
 
+.about-header q {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFB240;
+  padding: 0 4rem;
+  display: inline-block;
+  quotes: none;
+  position: relative; }
+  .about-header q .quote {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.about-header .divider {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #2F48A5;
+  margin: 6rem 0; }
+
+.about-header .descr h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #fff; }
+
+.about-header .descr p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 140%;
+  color: #fff;
+  opacity: .5; }
+
+.about-header .about-right {
+  overflow: visible; }
+  .about-header .about-right .banner {
+    padding: 3rem 4rem;
+    background-color: #FFB240;
+    position: absolute;
+    bottom: -5rem;
+    width: 120%; }
+    .about-header .about-right .banner h1 {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 120%;
+      margin-bottom: 2rem; }
+    .about-header .about-right .banner p {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 140%;
+      color: #323A56; }
+
+.about-section-faster {
+  width: 100%;
+  margin-bottom: 20rem; }
+  .about-section-faster__content {
+    width: 100%;
+    max-width: 125rem;
+    margin: auto; }
+    .about-section-faster__content .partners {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 5rem; }
+      .about-section-faster__content .partners .item {
+        width: 21rem;
+        height: 21rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5rem; }
+    .about-section-faster__content .clients {
+      display: flex;
+      justify-content: space-between; }
+      .about-section-faster__content .clients .left {
+        text-align: center;
+        width: 48%;
+        background-color: #253D93;
+        padding: 0 6.4rem 6.4rem 6.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 46rem; }
+        .about-section-faster__content .clients .left h1 {
+          font-weight: 500;
+          font-size: 28px;
+          line-height: 120%;
+          color: #fff; }
+        .about-section-faster__content .clients .left p {
+          font-size: 16px;
+          line-height: 140%;
+          color: #fff; }
+      .about-section-faster__content .clients .right {
+        width: 48%;
+        padding: 6.5rem;
+        padding-bottom: 3rem;
+        min-height: 46rem;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: center; }
+        .about-section-faster__content .clients .right .title {
+          color: #323A56;
+          font-weight: 500;
+          font-size: 28px;
+          line-height: 120%;
+          margin-bottom: 3.5rem; }
+        .about-section-faster__content .clients .right .content {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap; }
+          .about-section-faster__content .clients .right .content .item {
+            width: 48%;
+            margin-bottom: 2.4rem;
+            padding: 1.5rem 5rem; }
+            .about-section-faster__content .clients .right .content .item img {
+              max-width: 14rem; }
+
+.about-section-reviews {
+  margin-bottom: 10rem; }
+  .about-section-reviews__content {
+    width: 100%;
+    max-height: 80rem;
+    overflow: hidden;
+    max-width: 125rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    transition: all 0.7s; }
+    .about-section-reviews__content .close {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 80rem;
+      background-image: linear-gradient(180deg, transparent 0%, transparent 60%, #F4F4F4 90%);
+      z-index: 2;
+      opacity: 1;
+      transition: all 0.7s; }
+    .about-section-reviews__content.active {
+      max-height: 300rem; }
+      .about-section-reviews__content.active .close {
+        opacity: 0; }
+    .about-section-reviews__content .item {
+      margin-bottom: 4rem; }
+  .about-section-reviews .button {
+    text-align: center; }
+    .about-section-reviews .button a {
+      cursor: pointer; }
+
 .portfolio .cafe-vertical {
   margin-top: -3rem; }
 
@@ -1432,3 +1599,27 @@ footer {
       font-size: 13px;
       line-height: 160%;
       text-transform: uppercase; }
+  .cafe-vertical .center {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .cafe-vertical .center p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 140%;
+      color: #fff; }
+
+.about-section-header {
+  max-width: 125rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10rem auto; }
+  .about-section-header .title {
+    width: 45%; }
+  .about-section-header .descr {
+    width: 45%; }
+    .about-section-header .descr p:not(:last-child) {
+      margin-bottom: 3rem; }

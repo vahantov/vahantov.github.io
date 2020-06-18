@@ -8,6 +8,25 @@ function $$(item, arr) {
     }
 }
 
+function portfolioMore() {
+    const box = $$('.about-reviews'),
+        button = $$('.about-more a')
+
+    button.addEventListener('click', () => {
+        if ( box.classList.contains('active') ) {
+            box.classList.remove('active')
+            setTimeout(() => {
+                button.textContent = 'показать больше отзывов'
+            }, 700)
+        } else {
+            box.classList.add('active')
+            setTimeout(() => {
+                button.textContent = 'скрыть'
+            }, 700)
+        }
+    })
+}
+
 function callPopup() {
 
     const btn = $$('.nav .number'),
@@ -77,6 +96,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
     if ( $$('.third-up')) {
         thirdUp()
+    }
+
+    if ( $$('.about-more')) {
+        portfolioMore()
     }
 
 })

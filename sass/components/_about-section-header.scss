@@ -1,0 +1,20 @@
+.about-section-header {
+  max-width: $content-width;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10rem auto;
+
+  .title {
+    width: 45%;
+  }
+
+  .descr {
+    width: 45%;
+
+    p:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+}

@@ -56,8 +56,8 @@ window.addEventListener('DOMContentLoaded', () => {
             infinite: true,
             variableWidth: true,
             zIndex: 1,
-            prevArrow: $('.services-section-slider .arrows .left'),
-            nextArrow: $('.services-section-slider .arrows .right')
+            prevArrow: $('.slider .arrows .left'),
+            nextArrow: $('.slider .arrows .right')
         })
     }
 

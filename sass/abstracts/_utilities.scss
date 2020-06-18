@@ -36,3 +36,20 @@
 .color-white {
   color: $color-white !important;
 }
+
+.content-width {
+  width: 100%;
+  max-width: $content-width !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.flex-direction-column {
+  flex-direction: column !important;
+}

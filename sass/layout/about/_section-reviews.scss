@@ -1,0 +1,48 @@
+.about-section-reviews {
+  margin-bottom: $default-section-mb;
+
+  &__content {
+    width: 100%;
+    max-height: 80rem;
+    overflow: hidden;
+    max-width: $content-width;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    transition: all $default-transition-duration;
+
+    .close {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 80rem;
+      background-image: linear-gradient(180deg, transparent 0%, transparent 60%, $color-gray-primary 90%);
+      z-index: 2;
+      opacity: 1;
+      transition: all $default-transition-duration;
+    }
+
+    &.active {
+      max-height: 300rem;
+
+      .close {
+        opacity: 0;
+      }
+    }
+
+    .item {
+      margin-bottom: 4rem;
+    }
+  }
+
+  .button {
+    text-align: center;
+
+    a {
+      cursor: pointer;
+    }
+  }
+}
