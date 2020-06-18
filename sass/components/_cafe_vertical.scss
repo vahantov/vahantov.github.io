@@ -9,6 +9,16 @@
   .image {
     width: 50%;
     text-align: center;
+
+    &.centered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 10rem;
+      }
+    }
   }
 
   .left {
