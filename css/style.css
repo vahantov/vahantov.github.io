@@ -63,9 +63,6 @@ a {
 .mt-10 {
   margin-top: 10rem !important; }
 
-.mt-20 {
-  margin-top: 20rem !important; }
-
 .mt-5 {
   margin-top: 5rem !important; }
 
@@ -596,7 +593,8 @@ a {
       position: relative;
       z-index: 1; }
       .services-header-content__right img {
-        height: 100%; }
+        height: 100%;
+        max-width: 70rem; }
 
 .services-section-type {
   margin-top: 10rem;
