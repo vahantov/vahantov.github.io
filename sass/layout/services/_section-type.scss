@@ -20,6 +20,10 @@
       cursor: pointer;
       overflow: hidden;
 
+      &.big {
+        width: 58%;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -28,9 +32,8 @@
         left: 0;
       }
 
-      &:nth-child(3n + 1) {
-        width: 58%;
-      }
+
+
 
       .descr {
         z-index: 2;

@@ -63,6 +63,9 @@ a {
 .mt-10 {
   margin-top: 10rem !important; }
 
+.mt-20 {
+  margin-top: 20rem !important; }
+
 .mt-5 {
   margin-top: 5rem !important; }
 
@@ -601,14 +604,14 @@ a {
       position: relative;
       cursor: pointer;
       overflow: hidden; }
+      .services-section-type__content .item.big {
+        width: 58%; }
       .services-section-type__content .item img {
         width: 100%;
         height: auto;
         position: absolute;
         top: 0;
         left: 0; }
-      .services-section-type__content .item:nth-child(3n + 1) {
-        width: 58%; }
       .services-section-type__content .item .descr {
         z-index: 2;
         position: absolute;
