@@ -1,3 +1,23 @@
+@keyframes modalSuccessWidth1 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 5rem;
+  }
+}
+
+@keyframes modalSuccessWidth2 {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 12rem;
+  }
+}
+
 @keyframes spin {
   to {
       transform: rotate(360deg)
