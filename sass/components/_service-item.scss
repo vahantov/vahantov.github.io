@@ -87,4 +87,19 @@
       }
     }
   }
+
+  @include respond-to(medium) {
+    &.grid {
+      padding: 0 $default-section-px;
+
+      .service-grid-item {
+        min-height: min-content;
+        border: 1px solid $color-blue-lighter;
+
+        .more {
+          display: none;
+        }
+      }
+    }
+  }
 }

@@ -102,5 +102,60 @@
         }
       }
     }
+
+    @include respond-to(medium) {
+      flex-direction: column;
+      padding: 0 $default-section-px;
+      background: linear-gradient(0deg, transparent 0%, transparent 50%, $color-blue-primary-dark 50%, $color-blue-primary-dark 100%);
+
+      .background-image {
+        top: 35%;
+      }
+
+      &-left {
+        width: 100%;
+        text-align: center;
+
+        .top {
+          padding-top: 2rem;
+          padding-bottom: 4rem;
+
+          h2 {
+            color: $color-white;
+          }
+
+          p {
+            color: $color-white;
+          }
+        }
+
+        .bottom {
+          padding-bottom: 12rem;
+
+          p {
+            color: $color-white;
+            opacity: .5;
+          }
+
+          a {
+            margin: 1rem auto;
+          }
+        }
+      }
+
+      &-right {
+        width: 100%;
+
+        ul {
+          li {
+            flex-direction: column;
+            width: 50% !important;
+            text-align: center;
+            border: none !important;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
   }
 }

@@ -18,4 +18,8 @@
     max-width: 50%;
     margin: 3rem auto;
   }
+
+  @include respond-to(medium) {
+      max-width: 90%;
+  }
 }

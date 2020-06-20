@@ -17,6 +17,7 @@
         position: relative;
         transition: all .3s;
         background-color: $color-white;
+        margin-bottom: 2rem;
 
         &:hover {
           transform: translateY(-5px);

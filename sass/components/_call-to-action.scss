@@ -7,8 +7,8 @@ call-to-action {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin: auto;
   z-index: 5;
+  margin: auto;
   margin-bottom: 2rem;
 
   .image {
@@ -18,6 +18,10 @@ call-to-action {
     img{
       margin-bottom: -3px;
       height: 100%;
+    }
+
+    .disabled {
+      display: none;
     }
   }
 
@@ -56,6 +60,67 @@ call-to-action {
       margin: auto;
       margin-left: -4rem;
       z-index: 1;
+    }
+  }
+
+  @include respond-to(medium) {
+    width: auto;
+    flex-direction: column;
+    margin: 4rem 2rem;
+
+    &.half-up {
+      margin-top: -19rem;
+    }
+
+    .image {
+      display: flex;
+      width: 100%;
+
+      .active {
+        width: 50%;
+      }
+
+      .disabled {
+        width: 50%;
+        position: relative;
+        display: block;
+        text-align: center;
+        background-color: $color-orange-primary;
+
+        img {
+          width: 60%;
+          fill: $color-white;
+          filter: brightness(10);
+        }
+      }
+    }
+
+    .content {
+      text-align: center;
+      width: 100%;
+      padding: 3rem 2rem;
+
+      h2 {
+        width: 100%;
+      }
+    }
+
+    .button {
+      width: 100%;
+
+      img {
+        display: none;
+      }
+
+      .btn {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        transform: none;
+        margin: auto;
+        margin-bottom: 3rem;
+      }
     }
   }
 }

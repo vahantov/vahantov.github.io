@@ -160,11 +160,11 @@ window.addEventListener('DOMContentLoaded', function () {
         callPopup()
     }
 
-    if ( $$('.half-up')) {
+    if ( $$('.half-up') && window.innerWidth > windowMedium) {
         halfUp()
     }
 
-    if ( $$('.third-up')) {
+    if ( $$('.third-up') && window.innerWidth > windowMedium) {
         thirdUp()
     }
 

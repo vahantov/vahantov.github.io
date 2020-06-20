@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
         header()
     }
 
-    if ( $$('.spinning-button')) {
+    if ( $$('.spinning-button') && window.innerWidth > windowMedium) {
         spinningButton()
     }
 

@@ -104,5 +104,72 @@
         }
       }
     }
+
+
+  }
+
+  @include respond-to(medium) {
+    padding: 0 $default-section-px;
+
+    &__content {
+      flex-direction: column;
+
+      &-left {
+        text-align: center;
+        width: 100%;
+
+        .background {
+          position: relative;
+          left: 0;
+          top: 0;
+        }
+
+        .top {
+          .title {
+            width: 100% !important;
+          }
+
+          .descr {
+            width: 100% !important;
+            margin-bottom: 2.4rem;
+          }
+        }
+
+        .bottom {
+          padding-top: 2.4rem
+        }
+      }
+
+      &-right {
+        width: 100%;
+
+        .top {
+          height: 40rem;
+          width: 100%;
+        }
+
+        .bottom {
+          flex-direction: column-reverse;
+          text-align: center;
+
+          .pointer {
+            img {
+              padding-bottom: 2rem;
+              border-bottom: 1px solid $color-blue-lighter;
+            }
+          }
+
+          .descr {
+            padding: 0;
+            border: none;
+            width: 100%;
+
+            p {
+              margin: 2rem 0;
+            }
+          }
+        }
+      }
+    }
   }
 }

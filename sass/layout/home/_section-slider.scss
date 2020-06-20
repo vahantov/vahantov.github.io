@@ -105,5 +105,56 @@
         opacity: .5;
       }
     }
+
+    @include respond-to(medium) {
+      flex-direction: column;
+      overflow: hidden;
+      padding: 0;
+
+      .index-slider {
+        width: 100%;
+
+        .content {
+          .item {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .title {
+        width: 100%;
+        margin: 8rem 0;
+        padding: 0 2rem;
+
+        img {
+          height: 150%;
+          right: 0;
+        }
+      }
+
+      .descr {
+        width: 100%;
+        text-align: left;
+        padding: 2rem;
+        justify-content: space-between;
+
+        h3 {
+          order: 2;
+          margin: 2rem 0;
+        }
+
+        p {
+          margin: 2rem 0;
+          order: 3;
+        }
+
+        span {
+          margin: 2rem 0;
+          order: 1;
+        }
+      }
+    }
   }
 }

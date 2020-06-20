@@ -6,20 +6,6 @@
   display: flex;
   padding-top: 3rem;
 
-  @include respond-to(medium) {
-    min-height: 200vh;
-
-    &_content {
-      .bg {
-        top: 40%;
-
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
-
   &_content {
     background-repeat: no-repeat;
     background-position: left;
@@ -29,11 +15,6 @@
     margin: 10rem auto;
     display: flex;
     justify-content: space-between;
-
-    @include respond-to(medium) {
-      background-position: center;
-      flex-direction: column;
-    }
 
     .bg {
       position: absolute;
@@ -73,9 +54,18 @@
           display: none;
         }
       }
+    }
+  }
 
-      @include respond-to(medium) {
+  @include respond-to(medium) {
+    &_content {
+      background-position: center;
+      flex-direction: column;
+      margin: 10rem auto 0 auto;
+
+      .right {
         flex-direction: row;
+        margin-top:70rem;
 
         .service-grid-item {
           width: 50%;
@@ -85,19 +75,6 @@
           align-items: center;
           flex-direction: column-reverse;
           border: 1px solid $color-blue-lighter;
-
-          .content {
-            text-align: center;
-            width: 100%;
-
-            & > * {
-              margin: 2rem 0;
-            }
-
-            .more {
-              justify-content: center;
-            }
-          }
 
           &:first-child {
             width: 100%;
@@ -115,6 +92,33 @@
           .icon-horizontal {
             display: none;
           }
+
+          .content {
+            text-align: center;
+            width: 100%;
+
+            & > * {
+              margin: 2rem 0;
+            }
+
+            .more {
+              justify-content: center;
+            }
+          }
+        }
+      }
+
+      .left {
+        margin: 0 2rem;
+      }
+
+      .bg {
+        top: 20%;
+        left: 0;
+        padding: 5%;
+
+        img {
+          width: 100%;
         }
       }
     }
