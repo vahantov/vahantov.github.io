@@ -47,7 +47,7 @@ function modal() {
                 body = $$('body')
 
             modal.classList.add('active')
-            body.style.overflow = 'hidden'
+
 
             if ( modal.querySelector('form') ) {
                 const form = modal.querySelector('form'),

@@ -65,6 +65,7 @@ window.addEventListener('DOMContentLoaded', () => {
         $('.testimonials__content').slick({
             centerMode: true,
             slidesToShow: 1,
+            variableWidth: true,
             infinite: true,
             zIndex: 1,
             prevArrow: $('.testimonials .arrows .left'),

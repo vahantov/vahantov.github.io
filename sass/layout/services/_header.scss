@@ -14,6 +14,14 @@
     &__left {
       width: 50%;
 
+      &.wide {
+        width: 60%;
+      }
+
+      .upper_text {
+        margin: 2.4rem 0;
+      }
+
       h1 {
         color: $color-white;
         font-weight: bold;
