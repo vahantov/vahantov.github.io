@@ -41,3 +41,50 @@ a {
   text-align: center;
   margin: 5rem 0;
 }
+
+.cookies {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: $color-white;
+  padding: 1.6rem 0;
+  width: 100%;
+  z-index: 10;
+  align-items: center;
+
+  p {
+    font-size: 1.3rem;
+    line-height: 140%;
+    color: $color-text-gray;
+    opacity: .5;
+    margin-right: 4rem;
+
+    a {
+      color: $color-text-gray;
+      text-decoration: underline;
+      font-size: 1.3rem;
+
+      &:hover {
+        color: $color-text-primary;
+      }
+    }
+  }
+
+  button {
+    border: 1px solid $color-gray-light;
+    border-radius: $default-border-radius;
+    background-color: transparent;
+    font-size: 1rem;
+    line-height: 160%;
+    color: $color-text-primary;
+    padding: .6rem 2rem;
+    transition: all $default-transition-duration;
+
+    &:hover {
+      cursor: pointer;
+      border-color: $color-gray;
+      background-color: $color-gray-primary;
+    }
+  }
+}

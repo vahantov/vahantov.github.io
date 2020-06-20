@@ -19,7 +19,8 @@
   color: $color-white;
   transition: all $default-transition-duration;
   display: inline-block;
-
+  border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-yellow-primary;

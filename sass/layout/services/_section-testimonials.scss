@@ -8,11 +8,11 @@
 
   &__content {
     overflow: hidden;
+    margin: auto;
+    max-width: $content-width;
+
     .item {
       width: $content-width;
-      height: auto;
-      text-align: center;
-      display: inline-block;
       margin: auto 5rem;
     }
   }

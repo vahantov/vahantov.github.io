@@ -1,0 +1,74 @@
+input[type="checkbox"] {
+  display: none;
+
+  &:checked ~ label i {
+    opacity: 1;
+  }
+}
+
+input[type="text"] {
+  font-size: 18px;
+  line-height: 140%;
+  padding: 1rem 1.6rem;
+}
+
+button[disabled] {
+  background-color: $color-gray;
+
+  &:hover {
+    background-color: $color-gray;
+    color: $color-white;
+    cursor: default;
+  }
+}
+
+.checkbox {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: $color-text-gray;
+  padding-left: 4rem;
+  position: relative;
+  margin: 1.5rem 0;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 2.6rem;
+    width: 2.6rem;
+    border: 1px solid $color-gray;
+    border-radius: $default-border-radius;
+    background-color: $color-white;
+    z-index: 10;
+  }
+
+  i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 11;
+    opacity: 0;
+    font-weight: 400;
+    color: $color-blue-primary;
+    width: 2.6rem;
+    text-align: center;
+  }
+
+  a {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: $color-text-gray;
+    text-decoration: underline;
+  }
+}
+
+button {
+  width: max-content;
+  display: inline-block;
+}

@@ -3,7 +3,12 @@
 :root {
   font-family: $default-font-family;
   font-size: $default-font-size;
+
+  @include respond-to(big) {
+    font-size: $media-font-size;
+  }
 }
+
 a {
   font-size: 1.6rem;
   color: $color-white;

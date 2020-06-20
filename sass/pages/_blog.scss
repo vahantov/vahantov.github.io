@@ -1,0 +1,59 @@
+.blog {
+  .grid {
+    .item {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &-content {
+    width: 100%;
+    margin-bottom: $default-section-mb;
+
+    &__content {
+      width: 100%;
+      max-width: $content-width;
+      margin: auto;
+      background-color: $color-white;
+      padding: 6.4rem 18rem;
+
+      img {
+        display: inline-block;
+        margin: 4rem auto;
+      }
+
+      br {
+        margin: 1.2rem 0;
+      }
+
+      .date {
+        display: inline-block;
+        font-size: 1.3rem;
+        line-height: 140%;
+        color: $color-text-gray;
+        opacity: .5;
+        margin-top: 6.4rem;
+        text-align: left;
+      }
+
+      q {
+        font-size: 1.8rem;
+        line-height: 140%;
+        quotes: none;
+        padding-left: 4rem;
+        position: relative;
+        display: inline-block;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 4px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: $color-orange-primary;
+        }
+      }
+    }
+  }
+}
