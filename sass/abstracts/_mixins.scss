@@ -4,3 +4,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin respond-to($media) {
+  @if $media == big {
+    @media only screen and (max-width: $big) {
+      @content
+    }
+  }
+
+  @if $media == medium {
+    @media only screen and (max-width: $medium) {
+      @content
+    }
+  }
+
+  /*@if $media == small {
+    @media only screen and (max-width: $big) {
+      @content
+    }
+  }
+
+  @if $media == x-small {
+    @media only screen and (max-width: $big) {
+      @content
+    }
+  }*/
+}

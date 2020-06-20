@@ -4,11 +4,23 @@
   background-color: $color-blue-primary;
   position: relative;
   display: flex;
-  align-items: center;
   padding-top: 3rem;
 
+  @include respond-to(medium) {
+    min-height: 200vh;
+
+    &_content {
+      .bg {
+        top: 40%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   &_content {
-    background-image: url("../img/backgrounds/header-1x.svg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 65%;
@@ -17,6 +29,21 @@
     margin: 10rem auto;
     display: flex;
     justify-content: space-between;
+
+    @include respond-to(medium) {
+      background-position: center;
+      flex-direction: column;
+    }
+
+    .bg {
+      position: absolute;
+      bottom: 10%;
+      left: 18%;
+
+      img {
+        width: 70%;
+      }
+    }
 
     .left {
       width: 37rem;
@@ -37,12 +64,57 @@
 
     .right {
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: column;
 
-      .services-item {
-        &:not(:last-child) {
-          margin-bottom: 1.5rem;
+      .service-grid-item {
+        .icon-vertical {
+          display: none;
+        }
+      }
+
+      @include respond-to(medium) {
+        flex-direction: row;
+
+        .service-grid-item {
+          width: 50%;
+          margin: 0;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column-reverse;
+          border: 1px solid $color-blue-lighter;
+
+          .content {
+            text-align: center;
+            width: 100%;
+
+            & > * {
+              margin: 2rem 0;
+            }
+
+            .more {
+              justify-content: center;
+            }
+          }
+
+          &:first-child {
+            width: 100%;
+            padding-top: 0;
+          }
+
+          .hidden {
+            display: none;
+          }
+
+          .icon-vertical {
+            display: block;
+          }
+
+          .icon-horizontal {
+            display: none;
+          }
         }
       }
     }
