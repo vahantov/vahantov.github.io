@@ -105,7 +105,18 @@ a {
   padding: .6rem 0;
   width: 100%;
   z-index: 10;
-  align-items: center; }
+  align-items: center;
+  /*@if $media == small {
+    @media only screen and (max-width: $big) {
+      @content
+    }
+  }
+
+  @if $media == x-small {
+    @media only screen and (max-width: $big) {
+      @content
+    }
+  }*/ }
   .cookies p {
     font-size: 1.3rem;
     line-height: 140%;
@@ -131,6 +142,9 @@ a {
       cursor: pointer;
       border-color: #acafb9;
       background-color: #F4F4F4; }
+  @media only screen and (max-width: 1020px) {
+    .cookies {
+      padding: 2rem; } }
 
 :root {
   font-family: "Jost", sans-serif;

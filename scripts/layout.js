@@ -18,21 +18,23 @@ function spinningButton () {
         const btn = elem.querySelector('.button a'),
             img = elem.querySelector('.button img')
 
-        btn.addEventListener('mouseover', async () => {
-            if ( !img.classList.contains('active') ) {
-                await img.classList.add('active')
+       if (btn) {
+           btn.addEventListener('mouseover', async () => {
+               if ( !img.classList.contains('active') ) {
+                   await img.classList.add('active')
 
-                btn.addEventListener('mouseout', () => {
-                    img.addEventListener('webkitAnimationIteration', () => {
-                        img.classList.remove('active')
-                    }, {
-                        once: true
-                    })
-                }, {
-                    once: true
-                })
-            }
-        })
+                   btn.addEventListener('mouseout', () => {
+                       img.addEventListener('webkitAnimationIteration', () => {
+                           img.classList.remove('active')
+                       }, {
+                           once: true
+                       })
+                   }, {
+                       once: true
+                   })
+               }
+           })
+       }
     });
 }
 

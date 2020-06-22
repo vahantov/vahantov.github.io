@@ -97,84 +97,42 @@ function portfolioMore() {
     })
 }
 
-function callPopup(mobile) {
+function callPopup() {
 
     const btn = $$('.nav .number'),
         popup = $$('.nav .popup')
 
-    if ( mobile ) {
-        popup.style.top = document.querySelector('nav').clientHeight + 'px'
-        btn.addEventListener('click', () => {
-            if ( popup.classList.contains('active') ) {
-                popup.classList.remove('active')
-            } else {
-                (async function() {
-                    await popup.classList.add('active')
+    btn.addEventListener('mouseover', () => {
+        if ( popup.classList.contains('active') ) {
+            popup.classList.remove('active')
+        } else {
+            (async function() {
+                await popup.classList.add('active')
 
-                    if ( mobile ) {
-                        window.addEventListener('click', (event) => {  // убираем попап при уходе мышки
-                            if ( event.target !== btn && event.target !== popup && event.target.parentNode !== popup ) {
-                                popup.classList.remove('active')
-                            }
-                        })
+                /* Remove timeout if popup not hovered */
+                const timeOut = setTimeout(() => {
+                    popup.classList.remove('active')
+                }, 2000)
 
-                        popup.addEventListener('click', () => {
-                            clearTimeout(timeOut)
-                        })
-                    } else {
-                        /* Remove timeout if popup not hovered */
-                        const timeOut = setTimeout(() => {
-                            popup.classList.remove('active')
-                        }, 2000)
+                popup.addEventListener('mouseenter', () => {
+                    clearTimeout(timeOut)
+                })
+                /* --- */
 
-                        popup.addEventListener('mouseenter', () => {
-                            clearTimeout(timeOut)
-                        })
-                        /* --- */
+                popup.addEventListener("mouseleave", () => {
+                    popup.classList.remove('active')
+                })
 
-                        popup.addEventListener("mouseleave", () => {
-                            popup.classList.remove('active')
-                        })
-                    }
+                /* window.addEventListener('scroll', () => { // Убираем попал при скроле
+                     popup.classList.remove('active')
+                 })*/
+            })()
+        }
 
-                    /* window.addEventListener('scroll', () => { // Убираем попал при скроле
-                         popup.classList.remove('active')
-                     })*/
-                })()
-            }
-
-        })
-    } else {
-        btn.addEventListener('mouseover', () => {
-            if ( popup.classList.contains('active') ) {
-                popup.classList.remove('active')
-            } else {
-                (async function() {
-                    await popup.classList.add('active')
-
-                    /* Remove timeout if popup not hovered */
-                    const timeOut = setTimeout(() => {
-                        popup.classList.remove('active')
-                    }, 2000)
-
-                    popup.addEventListener('mouseenter', () => {
-                        clearTimeout(timeOut)
-                    })
-                    /* --- */
-
-                    popup.addEventListener("mouseleave", () => {
-                        popup.classList.remove('active')
-                    })
-
-                    /* window.addEventListener('scroll', () => { // Убираем попал при скроле
-                         popup.classList.remove('active')
-                     })*/
-                })()
-            }
-
-        })
-    }
+    })
 }
+
+
 
 function mobileNav() {
     const btn = document.querySelector('.nav_mobile'),
@@ -192,7 +150,7 @@ function mobileNav() {
     })
 }
 
-mobileNav()
+
 
 function halfUp () {
     const node = $$('.half-up', true)
@@ -213,9 +171,7 @@ function thirdUp() {
 window.addEventListener('DOMContentLoaded', function () {
 
     if ( $$('.nav .popup')) {
-        if ( window.innerWidth < windowMedium ) {
-            callPopup(true)
-        } else {
+        if ( window.innerWidth > windowMedium ) {
             callPopup()
         }
     }
@@ -238,6 +194,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
     if ( $$('form')) {
         forms()
+    }
+
+    if ($$('.nav_mobile')) {
+        mobileNav()
     }
 
 })

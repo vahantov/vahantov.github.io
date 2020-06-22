@@ -87,4 +87,8 @@ a {
       background-color: $color-gray-primary;
     }
   }
+  //GDPR
+  @include respond-to(medium) {
+    padding: 2rem;
+  }
 }
