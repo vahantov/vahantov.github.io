@@ -97,46 +97,102 @@ function portfolioMore() {
     })
 }
 
-function callPopup() {
+function callPopup(mobile) {
 
     const btn = $$('.nav .number'),
         popup = $$('.nav .popup')
 
-    btn.addEventListener('mouseover', () => {
-        if ( popup.classList.contains('active') ) {
-            popup.classList.remove('active')
-        } else {
-            (async function() {
-                await popup.classList.add('active')
+    if ( mobile ) {
+        popup.style.top = document.querySelector('nav').clientHeight + 'px'
+        btn.addEventListener('click', () => {
+            if ( popup.classList.contains('active') ) {
+                popup.classList.remove('active')
+            } else {
+                (async function() {
+                    await popup.classList.add('active')
 
-                /*window.addEventListener('click', (event) => {  // убираем попап при уходе мышки
-                    if ( event.target !== btn && event.target !== popup && event.target.parentNode !== popup ) {
-                        popup.classList.remove('active')
+                    if ( mobile ) {
+                        window.addEventListener('click', (event) => {  // убираем попап при уходе мышки
+                            if ( event.target !== btn && event.target !== popup && event.target.parentNode !== popup ) {
+                                popup.classList.remove('active')
+                            }
+                        })
+
+                        popup.addEventListener('click', () => {
+                            clearTimeout(timeOut)
+                        })
+                    } else {
+                        /* Remove timeout if popup not hovered */
+                        const timeOut = setTimeout(() => {
+                            popup.classList.remove('active')
+                        }, 2000)
+
+                        popup.addEventListener('mouseenter', () => {
+                            clearTimeout(timeOut)
+                        })
+                        /* --- */
+
+                        popup.addEventListener("mouseleave", () => {
+                            popup.classList.remove('active')
+                        })
                     }
-                })*/
 
-                /* Remove timeout if popup not hovered */
-                const timeOut = setTimeout(() => {
-                    popup.classList.remove('active')
-                }, 2000)
+                    /* window.addEventListener('scroll', () => { // Убираем попал при скроле
+                         popup.classList.remove('active')
+                     })*/
+                })()
+            }
 
-                popup.addEventListener('mouseenter', () => {
-                    clearTimeout(timeOut)
-                })
-                /* --- */
+        })
+    } else {
+        btn.addEventListener('mouseover', () => {
+            if ( popup.classList.contains('active') ) {
+                popup.classList.remove('active')
+            } else {
+                (async function() {
+                    await popup.classList.add('active')
 
-                popup.addEventListener("mouseleave", () => {
-                    popup.classList.remove('active')
-                })
+                    /* Remove timeout if popup not hovered */
+                    const timeOut = setTimeout(() => {
+                        popup.classList.remove('active')
+                    }, 2000)
 
-               /* window.addEventListener('scroll', () => { // Убираем попал при скроле
-                    popup.classList.remove('active')
-                })*/
-            })()
+                    popup.addEventListener('mouseenter', () => {
+                        clearTimeout(timeOut)
+                    })
+                    /* --- */
+
+                    popup.addEventListener("mouseleave", () => {
+                        popup.classList.remove('active')
+                    })
+
+                    /* window.addEventListener('scroll', () => { // Убираем попал при скроле
+                         popup.classList.remove('active')
+                     })*/
+                })()
+            }
+
+        })
+    }
+}
+
+function mobileNav() {
+    const btn = document.querySelector('.nav_mobile'),
+        nav = document.querySelector('.nav'),
+        menu = document.querySelector('.nav_content-menu')
+
+    btn.addEventListener('click', () => {
+        if ( nav.classList.contains('active')) {
+            nav.classList.remove('active')
+            nav.removeAttribute('style')
+        } else {
+            nav.classList.add('active')
+            nav.style.height = window.innerHeight + 'px'
         }
-
     })
 }
+
+mobileNav()
 
 function halfUp () {
     const node = $$('.half-up', true)
@@ -157,7 +213,11 @@ function thirdUp() {
 window.addEventListener('DOMContentLoaded', function () {
 
     if ( $$('.nav .popup')) {
-        callPopup()
+        if ( window.innerWidth < windowMedium ) {
+            callPopup(true)
+        } else {
+            callPopup()
+        }
     }
 
     if ( $$('.half-up') && window.innerWidth > windowMedium) {
