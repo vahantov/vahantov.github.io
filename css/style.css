@@ -1673,7 +1673,8 @@ call-to-action {
   }*/ }
   call-to-action .image {
     height: 100%;
-    background-color: #FFB240; }
+    background-color: #FFB240;
+    overflow: hidden; }
     call-to-action .image img {
       margin-bottom: -3px;
       height: 100%; }

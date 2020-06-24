@@ -14,6 +14,7 @@ call-to-action {
   .image {
     height: 100%;
     background-color: $color-yellow-primary;
+    overflow: hidden;
 
     img{
       margin-bottom: -3px;
