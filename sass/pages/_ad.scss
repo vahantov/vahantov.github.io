@@ -88,6 +88,20 @@
        }
      }
    }
+
+    @include respond-to(medium) {
+      width: 100%;
+      background-color: $color-blue-primary;
+      padding: 4rem 2rem;
+
+      &__content {
+        width: 100%;
+        position: relative !important;
+        float: unset;
+        margin: auto;
+        max-width: 100%;
+      }
+    }
   }
 
   &-section-services {
@@ -125,6 +139,22 @@
         }
       }
     }
+
+    @include respond-to(medium) {
+      &__content {
+        .item {
+          width: 100%;
+        }
+
+        .ad-image__content {
+          padding: 0;
+          border: none;
+          width: 100%;
+          position: relative;
+          max-width: 60rem !important;
+        }
+      }
+    }
   }
 
   .ad-section-links {
@@ -140,6 +170,24 @@
         max-width: 50%;
       }
     }
+
+    @include respond-to(medium) {
+      margin: 2rem;
+      padding: 0;
+
+      .ad-image {
+        flex-direction: column;
+        width: 100%;
+        background-color: transparent;
+        margin: 0;
+
+        &__content {
+          margin-bottom: 2rem;
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
   }
 
   .testimonials {
@@ -148,7 +196,8 @@
     padding-bottom: $default-section-mb-large;
 
     .arrows {
-      top: 55%;
+      top: 38.6%;
+      right: -7%;
     }
   }
 }

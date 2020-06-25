@@ -1,8 +1,8 @@
 .services-section-transparency {
   width: 100%;
   margin-bottom: $default-section-mb;
-
   margin-top: $default-section-mt;
+
   &__content {
     width: 100%;
     max-width: $content-width-small;
@@ -69,5 +69,27 @@
       }
     }
 
+    @include respond-to(medium) {
+      padding: $default-section-px;
+
+      .item {
+        flex-direction: column;
+
+        .left, .right {
+          width: 100%;
+        }
+
+        .right {
+          padding: 0
+        }
+
+        .left {
+          border: none;
+          border-bottom: 1px solid $color-gray;
+          padding-bottom: 2rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
   }
 }

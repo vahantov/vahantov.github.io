@@ -12,7 +12,7 @@
     justify-content: space-between;
 
     .item {
-      background-color: red;
+      background-color: $color-blue-primary;
       height: 38rem;
       margin-bottom: 5rem;
       width: 38%;
@@ -147,6 +147,20 @@
 
         .link {
           margin: 0 1rem;
+        }
+      }
+    }
+
+    @include respond-to(medium) {
+      .services-section-type__content {
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+
+        .item {
+          margin: 0;
+          padding: 0;
+          width: 50%;
         }
       }
     }

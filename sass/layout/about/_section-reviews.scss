@@ -36,6 +36,14 @@
     .item {
       margin-bottom: 4rem;
     }
+
+    @include respond-to(medium) {
+      flex-direction: column;
+
+      .item {
+        width: 100% !important;
+      }
+    }
   }
 
   .button {

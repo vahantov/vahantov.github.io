@@ -106,4 +106,32 @@
       }
     }
   }
+
+  @include  respond-to(medium) {
+    .item {
+      flex-direction: column;
+      width: 100vw;
+      padding: 4rem 4rem;
+
+      .title {
+        width: 85vw;
+        border-top: none;
+        border-bottom: 1px solid $color-gray;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        position: relative;
+
+        .icon {
+          position: absolute;
+          right: 2rem;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .content {
+        width: 90vw
+      }
+    }
+  }
 }

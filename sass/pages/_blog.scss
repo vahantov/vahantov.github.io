@@ -14,11 +14,16 @@
       max-width: $content-width;
       margin: auto;
       background-color: $color-white;
-      padding: 6.4rem 18rem;
+      padding: 6.4rem;
+
+      @include respond-to(medium) {
+        padding: 3rem;
+      }
 
       img {
         display: inline-block;
         margin: 4rem auto;
+        max-width: 100%;
       }
 
       br {

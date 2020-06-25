@@ -72,4 +72,33 @@
       color: $color-white;
     }
   }
+
+  @include respond-to(medium) {
+    flex-direction: column;
+    margin: $default-section-px;
+    padding: $default-section-px;
+    width: 95%;
+    text-align: center;
+
+    .image {
+      width: 100%;
+      order: 1;
+    }
+
+    .left {
+      text-align: left;
+      padding: 2rem 2rem;
+      width: 100%;
+      order: 2;
+      font-size: 2.4rem;
+    }
+
+    .center {
+      padding: 0 2rem;
+      margin-bottom: 2rem;
+      text-align: left;
+      width: 100%;
+      order: 3;
+    }
+  }
 }

@@ -16,6 +16,10 @@
 
       &.wide {
         width: 60%;
+
+        @include respond-to(medium) {
+          width: 100%;
+        }
       }
 
       .upper_text {
@@ -53,6 +57,11 @@
       img {
         height: 100%;
         max-width: 70rem;
+
+        @include respond-to(medium) {
+          width: 100%;
+          height: auto;
+        }
       }
     }
 

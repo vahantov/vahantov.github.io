@@ -66,4 +66,25 @@
       }
     }
   }
+
+  @include respond-to(medium) {
+    .services-header-content {
+      padding: 0 $default-section-px;
+      flex-direction: column;
+
+      .descr {
+        h3 {
+          font-size: 2.4rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+        }
+      }
+
+      .banner {
+        width: 100%;
+      }
+    }
+  }
 }

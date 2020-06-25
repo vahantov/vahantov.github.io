@@ -17,4 +17,17 @@
       margin-bottom: 3rem;
     }
   }
+
+  @include respond-to(medium) {
+    flex-direction: column;
+    padding: 0 $default-section-px;
+
+    .title {
+      width: 100%;
+    }
+
+    .descr {
+      width: 100%;
+    }
+  }
 }
