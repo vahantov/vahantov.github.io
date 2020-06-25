@@ -94,4 +94,22 @@
     font-size: 1.3rem;
     color: $color-text-gray;
   }
+
+  @include respond-to(medium) {
+    background: $color-blue-primary;
+    flex-direction: column;
+    padding: $default-section-px;
+
+    & > * {
+      background-color: #fff;
+      width: 100%;
+      padding: 2rem 4rem;
+    }
+
+
+    .descr {
+      background-color: $color-yellow-primary;
+      width: 100%;
+    }
+  }
 }

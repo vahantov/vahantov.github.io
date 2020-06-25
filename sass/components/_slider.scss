@@ -84,5 +84,11 @@
       font-size: 2rem;
       font-weight: 400;
     }
+
+    @include respond-to(medium) {
+      width: min-content;
+      top: 95%;
+      left: 92%;
+    }
   }
 }

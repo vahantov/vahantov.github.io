@@ -22,4 +22,10 @@ footer {
   a:hover {
     border-color: $color-gray;
   }
+
+  @include respond-to(medium) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

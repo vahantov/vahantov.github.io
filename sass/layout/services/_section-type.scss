@@ -86,6 +86,24 @@
         }
       }
     }
+
+    @include respond-to(medium) {
+      flex-direction: column;
+      justify-content: center;
+      padding: $default-section-px;
+
+      .item, .item.big {
+        width: 100%;
+
+        .descr {
+          background-color: rgba($color-blue-primary, .8);
+
+          .hidden {
+            display: none;
+          }
+        }
+      }
+    }
   }
 
   &.grid {

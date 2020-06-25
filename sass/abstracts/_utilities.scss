@@ -24,6 +24,10 @@
 
 .p-5 {
   padding: 5rem !important;
+
+  @include respond-to(medium) {
+    padding: 2rem !important;
+  }
 }
 
 .pb-0 {

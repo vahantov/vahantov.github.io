@@ -48,10 +48,12 @@ a {
   display: flex;
   justify-content: center;
   background-color: $color-white;
-  padding: .6rem 0;
+  padding: 1.2rem 0;
   width: 100%;
   z-index: 10;
   align-items: center;
+  transition: all $default-transition-duration;
+  overflow: hidden;
 
   p {
     font-size: 1.3rem;
@@ -90,5 +92,11 @@ a {
   //GDPR
   @include respond-to(medium) {
     padding: 2rem;
+  }
+
+  &.disabled {
+    white-space: nowrap;
+    width: 0;
+    opacity: 0;
   }
 }

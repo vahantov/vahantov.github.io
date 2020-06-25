@@ -200,4 +200,10 @@ window.addEventListener('DOMContentLoaded', function () {
         mobileNav()
     }
 
+    if ( $$('.cookies button') ) {
+        $$('.cookies button').addEventListener('click', () => {
+            $$('.cookies').classList.add('disabled')
+        })
+    }
+
 })

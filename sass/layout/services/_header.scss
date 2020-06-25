@@ -55,5 +55,15 @@
         max-width: 70rem;
       }
     }
+
+
+    @include respond-to(medium) {
+      flex-direction: column-reverse;
+
+      &__left {
+        padding: 3rem $default-section-px;
+        width: 100%;
+      }
+    }
   }
 }
