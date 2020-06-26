@@ -2564,6 +2564,10 @@ footer {
       @content
     }
   }*/ }
+  .service-action.half {
+    background-image: linear-gradient(90deg, #fff 0%, #fff 50%, #FFB240 50%, 100%, #FFB240); }
+    .service-action.half .descr {
+      width: 50%; }
   .service-action div {
     display: flex;
     flex-direction: column;
@@ -2577,7 +2581,7 @@ footer {
       margin-right: 2rem; }
       .service-action .descr .button .active {
         animation: spin 5s infinite; }
-      .service-action .descr .button a {
+      .service-action .descr .button a, .service-action .descr .button .marked {
         font-size: 2rem;
         padding: 2rem;
         position: absolute;
@@ -2586,9 +2590,9 @@ footer {
         transform: translate(-50%, -50%);
         z-index: 2;
         display: block; }
-        .service-action .descr .button a i {
+        .service-action .descr .button a i, .service-action .descr .button .marked i {
           font-weight: 300; }
-        .service-action .descr .button a:after {
+        .service-action .descr .button a:after, .service-action .descr .button .marked:after {
           content: "";
           display: inline-block;
           position: absolute;
@@ -2600,7 +2604,7 @@ footer {
           border-radius: 50%;
           background-color: #ff9903;
           z-index: -3; }
-        .service-action .descr .button a:before {
+        .service-action .descr .button a:before, .service-action .descr .button .marked:before {
           content: "";
           display: inline-block;
           position: absolute;
@@ -2613,7 +2617,7 @@ footer {
           height: 0;
           width: 0;
           transition: all 0.7s; }
-        .service-action .descr .button a:hover:before {
+        .service-action .descr .button a:hover:before, .service-action .descr .button .marked:hover:before {
           height: 5rem;
           width: 5rem; }
     .service-action .descr .content {
@@ -2856,7 +2860,18 @@ footer {
   top: 0;
   left: 0;
   z-index: -10;
-  transition: all 0.7s, z-index 0.0001s; }
+  transition: all 0.7s, z-index 0.0001s;
+  /*@if $media == small {
+    @media only screen and (max-width: $big) {
+      @content
+    }
+  }
+
+  @if $media == x-small {
+    @media only screen and (max-width: $big) {
+      @content
+    }
+  }*/ }
   .modal__content {
     display: flex;
     width: 100%;
@@ -2982,6 +2997,17 @@ footer {
     z-index: 10; }
     .modal.active .modal__content {
       top: 50%; }
+  @media only screen and (max-width: 1020px) {
+    .modal__content {
+      flex-direction: column; }
+      .modal__content .descr {
+        width: 100%; }
+      .modal__content .form {
+        width: 100%; }
+        .modal__content .form .close {
+          top: auto;
+          bottom: 2rem;
+          right: 2rem; } }
 
 input[type="checkbox"] {
   display: none; }

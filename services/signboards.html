@@ -114,7 +114,7 @@
 
         <div class="services-section-type__content">
 
-            <a class="item big modal-handler" data-modal="modal-service" data-name="">
+            <a class="item big modal-handler" data-modal="modal-service" data-content="Входные, офисные и информационные таблички">
                 <img src="../img/services/signboards/1.png" alt="">
                 <div class="descr">
                     <h2>Входные, офисные и информационные таблички</h2>
@@ -126,7 +126,7 @@
                 </div>
             </a>
 
-            <a class="item modal-handler" data-modal="modal-service">
+            <a class="item modal-handler" data-modal="modal-service" data-content="Световые и несветовые">
                 <img src="../img/services/signboards/2.png" alt="">
                 <div class="descr">
                     <h2>Уличные и интерьерные</h2>
@@ -753,68 +753,9 @@
             </div>
 
             <form class="content">
-                <input type="hidden">
-
+                <input type="hidden" id="service-type" required>
                 <input type="text" placeholder="Имя" required>
-
                 <input type="text" placeholder="Телефон" required>
-
-                <input type="checkbox" id="modal-checkbox-1" class="checkbox-required" required>
-                <label for="modal-checkbox-1" class="checkbox"><i class="fa fa-check"></i>Я согласен с <a href="#">политикой конфиденциальности</a></label>
-
-                <button class="btn-primary" type="submit" disabled>Заказать услугу</button>
-            </form>
-
-            <div class="success">
-                <span></span>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal" id="modal-service-1">
-    <div class="modal__content">
-
-        <div class="descr">
-            <div class="active">
-                <span>Услуга</span>
-                <h1>Монтаж и демонтаж вывесок: на металл-каркасе, на подложках, расположенных на фризах, на крышах и фасадах зданий</h1>
-            </div>
-            <div class="disactive">
-                <span>спасибо</span>
-                <h1>Ваша заявка успешно отправлена. Ждите звонок специалиста.</h1>
-            </div>
-        </div>
-        <div class="form">
-            <span class="close"><i class="fa fa-times"></i></span>
-            <div class="title">
-                <div class="icon">
-                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                            <circle cx="18" cy="18" r="11" stroke="white" stroke-width="2"/>
-                            <path d="M10 4.14062C5.21759 6.9071 2 12.0779 2 18.0001C2 26.8367 9.16344 34.0001 18 34.0001C26.8366 34.0001 34 26.8367 34 18.0001C34 12.0779 30.7824 6.9071 26 4.14062M10 4.14062V7M10 4.14062L7 3" stroke="white" stroke-width="2"/>
-                            <path d="M18 12V18L15 23" stroke="white" stroke-width="2"/>
-                            <path d="M18 7V10" stroke="white" stroke-width="2"/>
-                            <path d="M18 26V29" stroke="white" stroke-width="2"/>
-                            <path d="M29 18L26 18" stroke="white" stroke-width="2"/>
-                            <path d="M10 18L7 18" stroke="white" stroke-width="2"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0">
-                                <rect width="36" height="36" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
-                <h3>Заполните форму и мы перезвоним вам в течение 5 минут</h3>
-            </div>
-
-            <form class="content">
-                <input type="hidden">
-
-                <input type="text" placeholder="Имя" required>
-
-                <input type="text" placeholder="Телефон" required>
-
                 <input type="checkbox" id="modal-checkbox-1" class="checkbox-required" required>
                 <label for="modal-checkbox-1" class="checkbox"><i class="fa fa-check"></i>Я согласен с <a href="#">политикой конфиденциальности</a></label>
 

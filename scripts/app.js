@@ -49,9 +49,15 @@ function modal() {
             modal.classList.add('active')
 
 
-            if ( modal.querySelector('form') ) {
+            if ( modal.querySelector('form')) {
                 const form = modal.querySelector('form'),
-                    formBox = modal.querySelector('.form')
+                    formBox = modal.querySelector('.form'),
+                    input = document.getElementById('service-type')
+
+
+                if ( item.dataset.content ) {
+                    input.value = item.dataset.content
+                }
 
                 form.addEventListener('submit', event =>  {
                     event.preventDefault()

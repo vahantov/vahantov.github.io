@@ -176,4 +176,24 @@
       top: 50%;
     }
   }
+
+  @include respond-to(medium) {
+    &__content {
+      flex-direction: column;
+
+      .descr {
+        width: 100%;
+      }
+
+      .form {
+        width: 100%;
+
+        .close {
+          top: auto;
+          bottom: 2rem;
+          right: 2rem;
+        }
+      }
+    }
+  }
 }
