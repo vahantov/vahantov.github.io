@@ -65,13 +65,20 @@
         }
 
         .bottom {
-          & > * {
-            margin: 4rem 0;
+          margin: 4rem 0;
+
+          & > *:not(:last-child) {
+            margin-bottom: 2rem;
           }
         }
 
         &__left {
           width: 100%;
+          padding: 2.5rem;
+
+          .bottom {
+            margin-bottom: 1rem;
+          }
         }
 
         &__right {

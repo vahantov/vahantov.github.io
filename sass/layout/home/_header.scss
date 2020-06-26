@@ -29,6 +29,10 @@
     .left {
       width: 37rem;
 
+      a {
+        margin-top: 2rem;
+      }
+
       .small {
         font-size: 1.6rem;
         font-weight: 500;
@@ -59,13 +63,12 @@
 
   @include respond-to(medium) {
     &_content {
-      background-position: center;
       flex-direction: column;
       margin: 10rem auto 0 auto;
 
       .right {
         flex-direction: row;
-        margin-top:70rem;
+        order: 2;
 
         .service-grid-item {
           width: 50%;
@@ -113,9 +116,9 @@
       }
 
       .bg {
-        top: 20%;
-        left: 0;
-        padding: 5%;
+        position: static;
+        order: 2;
+        margin: 5rem 0;
 
         img {
           width: 100%;
