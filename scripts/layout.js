@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', () => {
         spinningButton()
     }
 
-    if ( $$('.margin-nav')) {
+    if ( $$('.margin-nav') && window.innerWidth > windowMedium) {
         marginNav()
     }
 

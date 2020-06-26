@@ -11,7 +11,7 @@
      display: flex;
      align-items: center;
      background-color: $color-yellow-primary;
-     max-width: 41rem;
+     max-width: 41.2rem;
      cursor: pointer;
      position: relative;
 
@@ -141,6 +141,8 @@
     }
 
     @include respond-to(medium) {
+      padding: 2rem $default-section-px;
+
       &__content {
         .item {
           width: 100%;
@@ -159,6 +161,9 @@
 
   .ad-section-links {
     padding: $default-section-mb 0;
+    @include respond-to(medium){
+      padding: 10rem $default-section-px;
+    }
 
     .ad-image {
       display: flex;

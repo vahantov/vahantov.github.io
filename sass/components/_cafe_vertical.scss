@@ -75,7 +75,7 @@
 
   @include respond-to(medium) {
     flex-direction: column;
-    margin: $default-section-px;
+    margin: 2rem auto;
     padding: $default-section-px;
     width: 95%;
     text-align: center;
