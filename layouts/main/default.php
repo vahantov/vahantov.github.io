@@ -8,17 +8,19 @@
 
 	<title>Print Sprint</title>
 
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/font-awesome/css/all.min.css">
-	<link rel="icon" href="img/favicon.png" type="img/png">
+	<link rel="stylesheet" href="/assets/main/css/style.css">
+	<link rel="stylesheet" href="/assets/main/css/font-awesome/css/all.min.css">
+	<link rel="icon" href="/assets/main/img/favicon.png" type="img/png">
+
+    <script src="/assets/main/scripts/assets/jquery.min.js"></script>
 </head>
 <body>
 
 <!--Навигация-->
 <nav class="nav">
 	<div class="nav_content">
-		<a href="index.html" class="nav_content-logo">
-			<img src="img/logo/logo-white-1x.png" alt="Logo">
+		<a href="/index.html" class="nav_content-logo">
+			<img src="/assets/main/img/logo/logo-white-1x.png" alt="Logo">
 		</a>
 
 		<div class="nav_content-menu">
@@ -36,13 +38,13 @@
 
 			<div class="nav_mobile">
 				<span></span>
-				<img src="icons/nav_mobile.svg" alt="">
+				<img src="/assets/main/icons/nav_mobile.svg" alt="">
 			</div>
 
 			<popup-toggle class="number">
 				<div class="nav_content-phone-icon">
-					<img src="icons/phone_nav.svg" alt="Phone Icon">
-					<a class="phone_mobile" href="tel:+74952666406"><img src="icons/phone_mobile.svg" alt="" class="phone_mobile"></a>
+					<img src="/assets/main/icons/phone_nav.svg" alt="Phone Icon">
+					<a class="phone_mobile" href="tel:+74952666406"><img src="/assets/main/icons/phone_mobile.svg" alt="" class="phone_mobile"></a>
 				</div>
 				<p class="num">+7 (495) 266-64-06</p>
 			</popup-toggle>
@@ -59,7 +61,7 @@
 <header class="header">
 	<div class="header_content">
 		<div class="bg">
-			<img src="img/backgrounds/header-1x.svg" alt="">
+			<img src="/assets/main/img/backgrounds/header-1x.svg" alt="">
 		</div>
 		<div class="left">
 			<span class="small">Изготавливаем рекламу с 1991 года</span>
@@ -73,10 +75,10 @@
 					<div class="more"><p class="hidden">Подробнее</p><i class="fa fa-long-arrow-right"></i></div>
 				</div>
 				<div class="icon icon-horizontal no-padding">
-					<img src="icons/banner.svg" alt="Banner">
+					<img src="/assets/main/icons/banner.svg" alt="Banner">
 				</div>
 				<div class="icon icon-vertical no-padding">
-					<img src="icons/cafe-vertical.svg" alt="Banner">
+					<img src="/assets/main/icons/cafe-vertical.svg" alt="Banner">
 				</div>
 			</a>
 
@@ -86,7 +88,7 @@
 					<div class="more"><p class="hidden">Подробнее</p><i class="fa fa-long-arrow-right"></i></div>
 				</div>
 				<div class="icon">
-					<img src="icons/working_time.svg" alt="working_time">
+					<img src="/assets/main/icons/working_time.svg" alt="working_time">
 				</div>
 			</a>
 
@@ -96,7 +98,7 @@
 					<div class="more"><p class="hidden">Подробнее</p><i class="fa fa-long-arrow-right"></i></div>
 				</div>
 				<div class="icon">
-					<img src="icons/sticker.svg" alt="Sticker">
+					<img src="/assets/main/icons/sticker.svg" alt="Sticker">
 				</div>
 			</a>
 		</div>
@@ -113,9 +115,9 @@
 	<!--call to action с рулеткой-->
 	<call-to-action class="spinning-button call_to_action third-up">
 		<div class="image">
-			<img class="active" src="icons/ruletka.svg" alt="ruletka">
+			<img class="active" src="/assets/main/icons/ruletka.svg" alt="ruletka">
 			<div class="disabled">
-				<img src="icons/freeicon.svg" alt="freeicon">
+				<img src="/assets/main/icons/freeicon.svg" alt="freeicon">
 			</div>
 		</div>
 		<div class="content">
@@ -124,7 +126,7 @@
 		</div>
 		<div class="button">
 			<a class="btn btn-primary" href="#">Пригласить специалиста</a>
-			<img src="icons/freeicon.svg" alt="freeicon">
+			<img src="/assets/main/icons/freeicon.svg" alt="freeicon">
 		</div>
 	</call-to-action>
 
@@ -143,7 +145,7 @@
 						<div class="more"><p class="hidden">Подробнее</p><i class="fa fa-long-arrow-right"></i></div>
 					</div>
 					<div class="icon">
-						<img src="icons/viveski.svg" alt="viveski.svg">
+						<img src="/assets/main/icons/viveski.svg" alt="viveski.svg">
 					</div>
 				</a>
 
@@ -153,7 +155,7 @@
 						<div class="more"><p class="hidden">Подробнее</p><i class="fa fa-long-arrow-right"></i></div>
 					</div>
 					<div class="icon">
-						<img src="icons/design.svg" alt="design">
+						<img src="/assets/main/icons/design.svg" alt="design">
 					</div>
 				</a>
 
@@ -163,7 +165,7 @@
 						<div class="more"><p class="hidden">Подробнее</p><i class="fa fa-long-arrow-right"></i></div>
 					</div>
 					<div class="icon">
-						<img src="icons/printing.svg" alt="printing">
+						<img src="/assets/main/icons/printing.svg" alt="printing">
 					</div>
 				</a>
 
@@ -173,7 +175,7 @@
 						<div class="more"><p class="hidden">Подробнее</p><i class="fa fa-long-arrow-right"></i></div>
 					</div>
 					<div class="icon">
-						<img src="icons/montage.svg" alt="montage">
+						<img src="/assets/main/icons/montage.svg" alt="montage">
 					</div>
 				</a>
 
@@ -183,7 +185,7 @@
 						<div class="more"><p class="hidden">Подробнее</p><i class="fa fa-long-arrow-right"></i></div>
 					</div>
 					<div class="icon">
-						<img src="icons/auto.svg" alt="auto">
+						<img src="/assets/main/icons/auto.svg" alt="auto">
 					</div>
 				</a>
 
@@ -193,7 +195,7 @@
 						<div class="more"><p class="hidden">Подробнее</p><i class="fa fa-long-arrow-right"></i></div>
 					</div>
 					<div class="icon">
-						<img src="icons/pos-m.svg" alt="pos-m">
+						<img src="/assets/main/icons/pos-m.svg" alt="pos-m">
 					</div>
 				</a>
 			</div>
@@ -211,21 +213,21 @@
 		<div class="section-slider__content">
 			<div class="title">
 				<h1>Более 20 лет мы занимаемся изготовлением наружной рекламы</h1>
-				<img src="img/backgrounds/20years.svg" alt="">
+				<img src="/assets/main/img/backgrounds/20years.svg" alt="">
 			</div>
 			<div class="index-slider">
 				<div class="content">
 					<div class="item">
-						<img src="img/services/1.jpg" alt="">
+						<img src="/assets/main/img/services/1.jpg" alt="">
 					</div>
 					<div class="item">
-						<img src="img/services/signboards/slider-1.png" alt="">
+						<img src="/assets/main/img/services/signboards/slider-1.png" alt="">
 					</div>
 					<div class="item">
-						<img src="img/services/signboards/slider-1.png" alt="">
+						<img src="/assets/main/img/services/signboards/slider-1.png" alt="">
 					</div>
 					<div class="item">
-						<img src="img/services/signboards/slider-1.png" alt="">
+						<img src="/assets/main/img/services/signboards/slider-1.png" alt="">
 					</div>
 				</div>
 
@@ -278,9 +280,9 @@
 	<!--call to action с рулеткой-->
 	<call-to-action class="spinning-button call_to_action half-up">
 		<div class="image">
-			<img class="active" src="icons/ruletka.svg" alt="ruletka">
+			<img class="active" src="/assets/main/icons/ruletka.svg" alt="ruletka">
 			<div class="disabled">
-				<img src="icons/freeicon.svg" alt="freeicon">
+				<img src="/assets/main/icons/freeicon.svg" alt="freeicon">
 			</div>
 		</div>
 		<div class="content">
@@ -289,7 +291,7 @@
 		</div>
 		<div class="button">
 			<a class="btn btn-primary" href="#">Пригласить специалиста</a>
-			<img src="icons/freeicon.svg" alt="freeicon">
+			<img src="/assets/main/icons/freeicon.svg" alt="freeicon">
 		</div>
 	</call-to-action>
 
@@ -298,7 +300,7 @@
 
 		<div class="section-part__content">
 			<div class="background-image">
-				<img src="icons/section-partner/background.svg" alt="Background">
+				<img src="/assets/main/icons/section-partner/background.svg" alt="Background">
 			</div>
 			<div class="section-part__content-left">
 				<div class="top">
@@ -315,56 +317,56 @@
 				<ul class="grid">
 					<li class="item">
 						<div class="icon">
-							<img src="icons/section-partner/montage.svg" alt="montage">
+							<img src="/assets/main/icons/section-partner/montage.svg" alt="montage">
 						</div>
 						<p>Монтажные работы</p>
 					</li>
 
 					<li class="item">
 						<div class="icon">
-							<img src="icons/section-partner/shirokoformatnaya_pechat.svg" alt="shirokoformatnaya_pechat">
+							<img src="/assets/main/icons/section-partner/shirokoformatnaya_pechat.svg" alt="shirokoformatnaya_pechat">
 						</div>
 						<p>Широкоформатная печать</p>
 					</li>
 
 					<li class="item">
 						<div class="icon">
-							<img src="icons/section-partner/frezerovka.svg" alt="frezerovka">
+							<img src="/assets/main/icons/section-partner/frezerovka.svg" alt="frezerovka">
 						</div>
 						<p>Фрезеровка</p>
 					</li>
 
 					<li class="item">
 						<div class="icon">
-							<img src="icons/section-partner/plotternaya_rezka.svg" alt="plotternaya_rezka">
+							<img src="/assets/main/icons/section-partner/plotternaya_rezka.svg" alt="plotternaya_rezka">
 						</div>
 						<p>Плоттерная резка</p>
 					</li>
 
 					<li class="item">
 						<div class="icon">
-							<img src="icons/section-partner/lazernaya_rezka.svg" alt="lazernaya_rezka">
+							<img src="/assets/main/icons/section-partner/lazernaya_rezka.svg" alt="lazernaya_rezka">
 						</div>
 						<p>Лазерная резка</p>
 					</li>
 
 					<li class="item">
 						<div class="icon">
-							<img src="icons/section-partner/nakat_plenki.svg" alt="nakat_plenki">
+							<img src="/assets/main/icons/section-partner/nakat_plenki.svg" alt="nakat_plenki">
 						</div>
 						<p>Накатка самоклеящихся пленок резка</p>
 					</li>
 
 					<li class="item">
 						<div class="icon">
-							<img src="icons/section-partner/gibka.svg" alt="gibka">
+							<img src="/assets/main/icons/section-partner/gibka.svg" alt="gibka">
 						</div>
 						<p>Гибка бортов для объемных букв из алюминия</p>
 					</li>
 
 					<li class="item">
 						<div class="icon">
-							<img src="icons/section-partner/svarka.svg" alt="svarka">
+							<img src="/assets/main/icons/section-partner/svarka.svg" alt="svarka">
 						</div>
 						<p>Сварка металлических каркасов и сложных конструкций</p>
 					</li>
@@ -386,7 +388,7 @@
 				<a class="item" href="#">
 					<div class="intro">
 						<div class="new">Новая публикация</div>
-						<img src="img/blog-examp.png" alt="Examp">
+						<img src="/assets/main/img/blog-examp.png" alt="Examp">
 					</div>
 					<div class="content">
 						<div class="title">
@@ -402,7 +404,7 @@
 				<a class="item" href="#">
 					<div class="intro">
 						<div class="new">Новая публикация</div>
-						<img src="img/blog-examp.png" alt="Examp">
+						<img src="/assets/main/img/blog-examp.png" alt="Examp">
 					</div>
 					<div class="content">
 						<div class="title">
@@ -418,7 +420,7 @@
 				<a class="item" href="#">
 					<div class="intro">
 						<div class="new">Новая публикация</div>
-						<img src="img/blog-examp.png" alt="Examp">
+						<img src="/assets/main/img/blog-examp.png" alt="Examp">
 					</div>
 					<div class="content">
 						<div class="title">
@@ -446,7 +448,7 @@
 			<!--min-height: 54rem-->
 			<div class="contact-us__content-left">
 				<div class="background">
-					<img src="img/contact/section-bg.svg" alt="Contact Background">
+					<img src="/assets/main/img/contact/section-bg.svg" alt="Contact Background">
 				</div>
 				<div class="top">
 					<h1 class="title">Остались вопросы?</h1>
@@ -466,7 +468,7 @@
 						<h3 class="address">Московская область, Одинцовский городской округ, село Немчиновка, 2-й просек, дом 22.</h3>
 					</div>
 					<div class="pointer">
-						<img src="icons/pointer.svg" alt="pointer">
+						<img src="/assets/main/icons/pointer.svg" alt="pointer">
 					</div>
 				</div>
 			</div>
@@ -476,9 +478,9 @@
 	<!--call to action с рулеткой-->
 	<call-to-action class="spinning-button call_to_action third-up">
 		<div class="image">
-			<img class="active" src="icons/ruletka.svg" alt="ruletka">
+			<img class="active" src="/assets/main/icons/ruletka.svg" alt="ruletka">
 			<div class="disabled">
-				<img src="icons/freeicon.svg" alt="freeicon">
+				<img src="/assets/main/icons/freeicon.svg" alt="freeicon">
 			</div>
 		</div>
 		<div class="content">
@@ -487,7 +489,7 @@
 		</div>
 		<div class="button">
 			<a class="btn btn-primary" href="#">Пригласить специалиста</a>
-			<img src="icons/freeicon.svg" alt="freeicon">
+			<img src="/assets/main/icons/freeicon.svg" alt="freeicon">
 		</div>
 	</call-to-action>
 
@@ -498,10 +500,10 @@
 	<a href="#" target="_blank">Политика конфиденциальности</a>
 </footer>
 
-<script src="scripts/assets/jquery.min.js"></script>
-<script src="scripts/assets/slick.min.js"></script>
-<script src="scripts/elements.js"></script>
-<script src="scripts/app.js"></script>
-<script src="scripts/layout.js"></script>
+<script src="/assets/default/JavaScript/main.js"></script>
+<script src="/assets/main/scripts/assets/slick.min.js"></script>
+<script src="/assets/main/scripts/elements.js"></script>
+<script src="/assets/main/scripts/app.js"></script>
+<script src="/assets/main/scripts/layout.js"></script>
 </body>
 </html>
